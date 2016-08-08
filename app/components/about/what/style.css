@@ -1,0 +1,36 @@
+.aboutSection {
+  margin-bottom: 11rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 10%;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  width: 50%;
+
+  svg {
+    align-self: center;
+    min-width: 58px;
+    margin: 2.3rem;
+  }
+}
+
+.text {
+  display: inline-block;
+  margin-bottom: 3.3rem;
+
+  h2 {
+    margin: 0;
+  }
+}

@@ -1,0 +1,18 @@
+.footer {
+  text-align: center;
+  padding: 80px 0 67px;
+  font-family: 'Space Mono';
+}
+
+.mailLink {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.iconLink {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 19px;
+  margin-right: 13px;
+  margin-left: 13px;
+}
