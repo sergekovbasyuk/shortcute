@@ -22322,15 +22322,26 @@ webpackJsonp([0,3],[
 	    key: 'render',
 	    value: function render() {
 	      var id = this.props.id,
-	          title = this.props.data[id - 1].title,
-	          description = this.props.data[id - 1].description,
-	          background = this.props.data[id - 1].background,
-	          task = this.props.data[id - 1].task,
-	          deliverables = this.props.data[id - 1].deliverables;
-	      //   nextLinkId = parseInt(id) + 1,
-	      //   nextProjectTitle = this.props.data[id].title,
-	      //   nextProjectDescription = this.props.data[id].description,
-	      //   total = 6;
+	          title = this.props.data[id].title,
+	          description = this.props.data[id].description,
+	          background = this.props.data[id].background,
+	          task = this.props.data[id].task,
+	          deliverables = this.props.data[id].deliverables,
+	          total = this.props.data.length - 1;
+
+	      var nextId = void 0,
+	          nextProjectTitle = void 0,
+	          nextProjectDescription = void 0;
+
+	      if (id == total) {
+	        nextId = 0;
+	        nextProjectTitle = this.props.data[nextId].title;
+	        nextProjectDescription = this.props.data[nextId].description;
+	      } else {
+	        nextId = parseInt(id) + 1;
+	        nextProjectTitle = this.props.data[nextId].title;
+	        nextProjectDescription = this.props.data[nextId].description;
+	      }
 
 	      return _react2.default.createElement(
 	        'div',
@@ -22371,7 +22382,7 @@ webpackJsonp([0,3],[
 	          ),
 	          _react2.default.createElement('hr', null)
 	        ),
-	        _react2.default.createElement(_nextProject2.default, { nextProjectTitle: 'lol', nextProjectDescription: 'lololol', nextLinkId: 0 }),
+	        _react2.default.createElement(_nextProject2.default, { nextProjectTitle: nextProjectTitle, nextProjectDescription: nextProjectDescription, nextLinkId: nextId }),
 	        _react2.default.createElement(_footer2.default, null)
 	      );
 	    }
@@ -37220,7 +37231,7 @@ webpackJsonp([0,3],[
 	          ),
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/cases/' + number, className: _style2.default.btn },
+	            { to: '/cases/' + (number - 1), className: _style2.default.btn },
 	            'view case'
 	          ),
 	          _react2.default.createElement(_casenav2.default, { number: number, total: total })
