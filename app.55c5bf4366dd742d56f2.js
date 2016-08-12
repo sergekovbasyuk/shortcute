@@ -16516,11 +16516,11 @@ webpackJsonp([0,3],[
 
 	var _layout2 = _interopRequireDefault(_layout);
 
-	var _about = __webpack_require__(282);
+	var _about = __webpack_require__(280);
 
 	var _about2 = _interopRequireDefault(_about);
 
-	var _contacts = __webpack_require__(315);
+	var _contacts = __webpack_require__(313);
 
 	var _contacts2 = _interopRequireDefault(_contacts);
 
@@ -22209,7 +22209,7 @@ webpackJsonp([0,3],[
 
 	var CasesList = [{
 	  imgSmall: 'img/pinstants-012sm.jpg',
-	  imgMiddle: 'img/pinstants-012md.jpg',
+	  imgMiddle: 'img/pinstants.png',
 	  imgLarge: 'img/pinstants-012lg.jpg',
 	  title: 'Pinstants',
 	  description: 'Responsive website with dashboard for London based employment service startup.',
@@ -37085,7 +37085,7 @@ webpackJsonp([0,3],[
 
 	var _item2 = _interopRequireDefault(_item);
 
-	var _first = __webpack_require__(278);
+	var _first = __webpack_require__(277);
 
 	var _first2 = _interopRequireDefault(_first);
 
@@ -37207,11 +37207,16 @@ webpackJsonp([0,3],[
 	      var title = this.props.data.title,
 	          description = this.props.data.description,
 	          number = this.props.number,
+	          imgMiddle = this.props.data.imgMiddle,
 	          total = this.props.total;
+
+	      var bg = {
+	        backgroundImage: 'url(' + imgMiddle + ')'
+	      };
 
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'section ' + _style2.default.case },
+	        { className: 'section ' + _style2.default.case, style: bg },
 	        _react2.default.createElement(
 	          'div',
 	          { className: _style2.default.content },
@@ -37254,8 +37259,7 @@ webpackJsonp([0,3],[
 
 /***/ },
 /* 276 */,
-/* 277 */,
-/* 278 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37270,7 +37274,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(279);
+	var _style = __webpack_require__(278);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -37306,7 +37310,7 @@ webpackJsonp([0,3],[
 
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'section ' + _style2.default.firstslide },
+	        { className: 'section fp-auto-height ' + _style2.default.firstslide },
 	        _react2.default.createElement(
 	          'div',
 	          { className: _style2.default.content },
@@ -37348,16 +37352,15 @@ webpackJsonp([0,3],[
 	exports.default = First;
 
 /***/ },
-/* 279 */
+/* 278 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"logo":"style__logo___2QovE","arrowdown":"style__arrowdown___1icjO","content":"style__content___338ML","firstslide":"style__firstslide___3glh-"};
 
 /***/ },
-/* 280 */,
-/* 281 */,
-/* 282 */
+/* 279 */,
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37372,27 +37375,27 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _first = __webpack_require__(283);
+	var _first = __webpack_require__(281);
 
 	var _first2 = _interopRequireDefault(_first);
 
-	var _what = __webpack_require__(286);
+	var _what = __webpack_require__(284);
 
 	var _what2 = _interopRequireDefault(_what);
 
-	var _how = __webpack_require__(291);
+	var _how = __webpack_require__(289);
 
 	var _how2 = _interopRequireDefault(_how);
 
-	var _clients = __webpack_require__(302);
+	var _clients = __webpack_require__(300);
 
 	var _clients2 = _interopRequireDefault(_clients);
 
-	var _team = __webpack_require__(309);
+	var _team = __webpack_require__(307);
 
 	var _team2 = _interopRequireDefault(_team);
 
-	var _contact = __webpack_require__(312);
+	var _contact = __webpack_require__(310);
 
 	var _contact2 = _interopRequireDefault(_contact);
 
@@ -37440,7 +37443,7 @@ webpackJsonp([0,3],[
 	exports.default = About;
 
 /***/ },
-/* 283 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -37455,7 +37458,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(284);
+	var _style = __webpack_require__(282);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -37515,15 +37518,15 @@ webpackJsonp([0,3],[
 	exports.default = First;
 
 /***/ },
-/* 284 */
+/* 282 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"first":"style__first___H18Zo","logo":"style__logo___11KDT","content":"style__content___2w8DA","text":"style__text___2bxP7"};
 
 /***/ },
-/* 285 */,
-/* 286 */
+/* 283 */,
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37538,15 +37541,15 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(287);
+	var _style = __webpack_require__(285);
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _MonitorIcon = __webpack_require__(289);
+	var _MonitorIcon = __webpack_require__(287);
 
 	var _MonitorIcon2 = _interopRequireDefault(_MonitorIcon);
 
-	var _SmartTabletIcon = __webpack_require__(290);
+	var _SmartTabletIcon = __webpack_require__(288);
 
 	var _SmartTabletIcon2 = _interopRequireDefault(_SmartTabletIcon);
 
@@ -37643,15 +37646,15 @@ webpackJsonp([0,3],[
 	exports.default = What;
 
 /***/ },
-/* 287 */
+/* 285 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"aboutSection":"style__aboutSection___1D4DY","content":"style__content___3028a","items":"style__items___2JqNU","item":"style__item___2PgW2","text":"style__text___2J9rr"};
 
 /***/ },
-/* 288 */,
-/* 289 */
+/* 286 */,
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -37704,7 +37707,7 @@ webpackJsonp([0,3],[
 	exports.default = MonitorIcon;
 
 /***/ },
-/* 290 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -37757,7 +37760,7 @@ webpackJsonp([0,3],[
 	exports.default = SmartTabletIcon;
 
 /***/ },
-/* 291 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37772,39 +37775,39 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(292);
+	var _style = __webpack_require__(290);
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _BitmapIcon = __webpack_require__(294);
+	var _BitmapIcon = __webpack_require__(292);
 
 	var _BitmapIcon2 = _interopRequireDefault(_BitmapIcon);
 
-	var _CommentsIcon = __webpack_require__(295);
+	var _CommentsIcon = __webpack_require__(293);
 
 	var _CommentsIcon2 = _interopRequireDefault(_CommentsIcon);
 
-	var _LayersIcon = __webpack_require__(296);
+	var _LayersIcon = __webpack_require__(294);
 
 	var _LayersIcon2 = _interopRequireDefault(_LayersIcon);
 
-	var _ZoomInIcon = __webpack_require__(297);
+	var _ZoomInIcon = __webpack_require__(295);
 
 	var _ZoomInIcon2 = _interopRequireDefault(_ZoomInIcon);
 
-	var _DoubleTapIcon = __webpack_require__(298);
+	var _DoubleTapIcon = __webpack_require__(296);
 
 	var _DoubleTapIcon2 = _interopRequireDefault(_DoubleTapIcon);
 
-	var _PenPencilIcon = __webpack_require__(299);
+	var _PenPencilIcon = __webpack_require__(297);
 
 	var _PenPencilIcon2 = _interopRequireDefault(_PenPencilIcon);
 
-	var _SettingsIcon = __webpack_require__(300);
+	var _SettingsIcon = __webpack_require__(298);
 
 	var _SettingsIcon2 = _interopRequireDefault(_SettingsIcon);
 
-	var _WindowLayoutIcon = __webpack_require__(301);
+	var _WindowLayoutIcon = __webpack_require__(299);
 
 	var _WindowLayoutIcon2 = _interopRequireDefault(_WindowLayoutIcon);
 
@@ -38015,15 +38018,15 @@ webpackJsonp([0,3],[
 	exports.default = How;
 
 /***/ },
-/* 292 */
+/* 290 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"aboutSection":"style__aboutSection___3ucJU","content":"style__content___2geWP","items":"style__items___38t7i","item":"style__item___3WBc-","text":"style__text___1Q4Yl"};
 
 /***/ },
-/* 293 */,
-/* 294 */
+/* 291 */,
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38076,7 +38079,7 @@ webpackJsonp([0,3],[
 	exports.default = BitmapIcon;
 
 /***/ },
-/* 295 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38129,7 +38132,7 @@ webpackJsonp([0,3],[
 	exports.default = CommentsIcon;
 
 /***/ },
-/* 296 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38182,7 +38185,7 @@ webpackJsonp([0,3],[
 	exports.default = LayersIcon;
 
 /***/ },
-/* 297 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38235,7 +38238,7 @@ webpackJsonp([0,3],[
 	exports.default = ZoomInIcon;
 
 /***/ },
-/* 298 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38288,7 +38291,7 @@ webpackJsonp([0,3],[
 	exports.default = DoubleTapIcon;
 
 /***/ },
-/* 299 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38341,7 +38344,7 @@ webpackJsonp([0,3],[
 	exports.default = PenPencilIcon;
 
 /***/ },
-/* 300 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38394,7 +38397,7 @@ webpackJsonp([0,3],[
 	exports.default = SettingsIcon;
 
 /***/ },
-/* 301 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38447,7 +38450,7 @@ webpackJsonp([0,3],[
 	exports.default = WindowLayoutIcon;
 
 /***/ },
-/* 302 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38462,27 +38465,27 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(303);
+	var _style = __webpack_require__(301);
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _PenPencilIcon = __webpack_require__(299);
+	var _PenPencilIcon = __webpack_require__(297);
 
 	var _PenPencilIcon2 = _interopRequireDefault(_PenPencilIcon);
 
-	var _BriefcaseIcon = __webpack_require__(305);
+	var _BriefcaseIcon = __webpack_require__(303);
 
 	var _BriefcaseIcon2 = _interopRequireDefault(_BriefcaseIcon);
 
-	var _BulbIcon = __webpack_require__(306);
+	var _BulbIcon = __webpack_require__(304);
 
 	var _BulbIcon2 = _interopRequireDefault(_BulbIcon);
 
-	var _ShapeIcon = __webpack_require__(307);
+	var _ShapeIcon = __webpack_require__(305);
 
 	var _ShapeIcon2 = _interopRequireDefault(_ShapeIcon);
 
-	var _UserMaleIcon = __webpack_require__(308);
+	var _UserMaleIcon = __webpack_require__(306);
 
 	var _UserMaleIcon2 = _interopRequireDefault(_UserMaleIcon);
 
@@ -38581,15 +38584,15 @@ webpackJsonp([0,3],[
 	exports.default = Clients;
 
 /***/ },
-/* 303 */
+/* 301 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"aboutSection":"style__aboutSection___30_7P","content":"style__content___nvQfz","text":"style__text___S3Gs_","clients":"style__clients___2zSwL","client":"style__client___17SJ_"};
 
 /***/ },
-/* 304 */,
-/* 305 */
+/* 302 */,
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38642,7 +38645,7 @@ webpackJsonp([0,3],[
 	exports.default = BriefcaseIcon;
 
 /***/ },
-/* 306 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38695,7 +38698,7 @@ webpackJsonp([0,3],[
 	exports.default = BulbIcon;
 
 /***/ },
-/* 307 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38748,7 +38751,7 @@ webpackJsonp([0,3],[
 	exports.default = ShapeIcon;
 
 /***/ },
-/* 308 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38801,7 +38804,7 @@ webpackJsonp([0,3],[
 	exports.default = UserMaleIcon;
 
 /***/ },
-/* 309 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38816,7 +38819,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(310);
+	var _style = __webpack_require__(308);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -38931,15 +38934,15 @@ webpackJsonp([0,3],[
 	exports.default = Team;
 
 /***/ },
-/* 310 */
+/* 308 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"aboutSection":"style__aboutSection___1Cq6H","content":"style__content___3lEM0","text":"style__text___1_JKY","employees":"style__employees___38SWO","employee":"style__employee___MlU6D"};
 
 /***/ },
-/* 311 */,
-/* 312 */
+/* 309 */,
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38954,7 +38957,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(313);
+	var _style = __webpack_require__(311);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -39014,15 +39017,15 @@ webpackJsonp([0,3],[
 	exports.default = Contact;
 
 /***/ },
-/* 313 */
+/* 311 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"contact":"style__contact___1SO-e","content":"style__content___2l0hO","contactText":"style__contactText___qPft4","btn":"style__btn___sOJTC"};
 
 /***/ },
-/* 314 */,
-/* 315 */
+/* 312 */,
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39037,11 +39040,11 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _first = __webpack_require__(316);
+	var _first = __webpack_require__(314);
 
 	var _first2 = _interopRequireDefault(_first);
 
-	var _brief = __webpack_require__(320);
+	var _brief = __webpack_require__(318);
 
 	var _brief2 = _interopRequireDefault(_brief);
 
@@ -39080,7 +39083,7 @@ webpackJsonp([0,3],[
 	exports.default = Contacts;
 
 /***/ },
-/* 316 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39095,7 +39098,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(317);
+	var _style = __webpack_require__(315);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -39107,7 +39110,7 @@ webpackJsonp([0,3],[
 
 	var _DribbleIcon2 = _interopRequireDefault(_DribbleIcon);
 
-	var _MailIcon = __webpack_require__(319);
+	var _MailIcon = __webpack_require__(317);
 
 	var _MailIcon2 = _interopRequireDefault(_MailIcon);
 
@@ -39187,15 +39190,15 @@ webpackJsonp([0,3],[
 	exports.default = First;
 
 /***/ },
-/* 317 */
+/* 315 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"first":"style__first___3jAaw","logo":"style__logo___UY6Xg","content":"style__content___adBXG","text":"style__text___3K5re","link":"style__link___ed49y"};
 
 /***/ },
-/* 318 */,
-/* 319 */
+/* 316 */,
+/* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39248,7 +39251,7 @@ webpackJsonp([0,3],[
 	exports.default = MailIcon;
 
 /***/ },
-/* 320 */
+/* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39263,7 +39266,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(321);
+	var _style = __webpack_require__(319);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -39323,7 +39326,7 @@ webpackJsonp([0,3],[
 	exports.default = Brief;
 
 /***/ },
-/* 321 */
+/* 319 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
