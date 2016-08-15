@@ -16516,11 +16516,11 @@ webpackJsonp([0,3],[
 
 	var _layout2 = _interopRequireDefault(_layout);
 
-	var _about = __webpack_require__(298);
+	var _about = __webpack_require__(280);
 
 	var _about2 = _interopRequireDefault(_about);
 
-	var _contacts = __webpack_require__(331);
+	var _contacts = __webpack_require__(303);
 
 	var _contacts2 = _interopRequireDefault(_contacts);
 
@@ -22208,54 +22208,66 @@ webpackJsonp([0,3],[
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var CasesList = [{
-	  imgSmall: 'img/pinstants_sm.jpg',
-	  imgMiddle: 'img/pinstants_md.jpg',
-	  imgLarge: 'img/pinstants_lg.jpg',
+	  imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/pinstants_sm.jpg',
+	  imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/pinstants_md.jpg',
+	  imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/pinstants_lg.jpg',
+	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284701/shortcute/pinstants/mockups.jpg',
+	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284702/shortcute/pinstants/shots.jpg',
 	  title: 'Pinstants',
 	  description: 'Responsive website with dashboard for London based employment service startup.',
 	  background: 'Researching, UI and UX designing for fast growing London based employment service startup named Pinstant which helps match the right talent with the right opportunity.',
 	  task: 'To provide responsive website design with internal pages including dashboard in extremely short terms and follow freshy-modern-corporate style. The website should give clients an opportunity to search and add vacancies.',
 	  deliverables: 'Check this awesome 545 PSD’s , Buddy'
 	}, {
-	  imgSmall: 'img/smoliar_sm.jpg',
-	  imgMiddle: 'img/smoliar_md.jpg',
-	  imgLarge: 'img/smoliar_lg.jpg',
+	  imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/smoliar_sm.jpg',
+	  imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/smoliar_md.jpg',
+	  imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/smoliar_lg.jpg',
+	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284701/shortcute/pinstants/mockups.jpg',
+	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284702/shortcute/pinstants/shots.jpg',
 	  title: 'Alexei Smoliar',
 	  description: 'A known movie director assistant\'s responsive website.',
 	  background: 'The client is a known movie director assistant which has a great credits list that includes famous movies (mostly over CIS countries) and partnerships with respected directors.',
 	  task: 'Make a stylish responsive website design with kind of cinema industry and raw working process spirit. The site aims to represent our client as a high-class professional (who he really is), conveniently provide info about projects, gear, plans, schedule — all about his entire working life.',
 	  deliverables: 'The website is visual-content-centered with its full width bg stylish photos, videos of backstage and generally made in dark colors flavored with faded-gold h1 font. The main page is designed like a slide show, information appears on cards, which replace one another with some animation when user scrolling.'
 	}, {
-	  imgSmall: 'img/minuteoflife_sm.jpg',
-	  imgMiddle: 'img/minuteoflife_md.jpg',
-	  imgLarge: 'img/minuteoflife_lg.jpg',
+	  imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/minuteoflife_sm.jpg',
+	  imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/minuteoflife_md.jpg',
+	  imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/minuteoflife_lg.jpg',
+	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284701/shortcute/pinstants/mockups.jpg',
+	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284702/shortcute/pinstants/shots.jpg',
 	  title: 'Minute of Life',
 	  description: 'The goal was to create an ultimately friendly interface suitable for users of all ages.',
 	  background: 'Our client is Brainberry Global — augmented reality team that has launched a video messenger which features leaving video messages on physical objects. The very first version of website was launched back in 2014 and in the end of 2015 it was decided to make a redesign of service and the guys turned to us.',
 	  task: 'We were asked to create an extremely friendly interface suitable for users of all ages. The most important and difficult milestone was to create the video editor ui — it had to include all functions and had no even a shadow of complexity. Our team was given a prototype and a logo.',
 	  deliverables: 'Obvious navigation and info hierarchy, big comfortable and easy-to-notice buttons, extremely familiar social features section includes feed, messaging etc, pretty blue backgrounds — all this make UI friendly af.'
 	}, {
-	  imgSmall: 'img/silver_sm.jpg',
-	  imgMiddle: 'img/silver_md.jpg',
-	  imgLarge: 'img/silver_lg.jpg',
+	  imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283689/shortcute/silver_sm.jpg',
+	  imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/silver_md.jpg',
+	  imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283692/shortcute/silver_lg.jpg',
+	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284701/shortcute/pinstants/mockups.jpg',
+	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284702/shortcute/pinstants/shots.jpg',
 	  title: 'Dubai Table',
 	  description: 'Our client wanted a design for his app named Dubai Table that helps people to find best restaurants in Dubai.',
 	  background: 'The client is a startup that aims to impelement new services in not-so-crowded UAE app market.',
 	  task: 'The goal was to create an ultimately friendly interface suitable for users of all ages. The most important and difficult milestone was to create a video editor ui — it had to include all functions and had no even a shadow of complexity. Our team was given a prototype and a logo.',
 	  deliverables: 'Simple navigation, rich filtering abilities and useful venue info makes this app necessary for Dubai visitors as well as for locals. Designed in Sketch app.'
 	}, {
-	  imgSmall: 'img/kuan_sm.jpg',
-	  imgMiddle: 'img/kuan_md.jpg',
-	  imgLarge: 'img/kuan_lg.jpg',
+	  imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/kuan_sm.jpg',
+	  imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/kuan_md.jpg',
+	  imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/kuan_lg.jpg',
+	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284701/shortcute/pinstants/mockups.jpg',
+	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284702/shortcute/pinstants/shots.jpg',
 	  title: 'Kuan',
 	  description: 'Our goal was to create business style website for Chinese financial start-up in extremely short terms.',
 	  background: 'Kuan Inc. is a London-Hong Kong based Financial Technology (Fintech) company offering Peer-to-Peer (P2P) foreign exchange services for businesses trading between Europe and Asia.',
 	  task: 'The client needed a responsive landing page and a massive dashboard with lots of functions that will allow clients to manage their finances.',
 	  deliverables: 'Modern business&tech style designs with an extensive set of internal pages and a dashboard. Since the website supposed to provide lots of data tables and long-reads, it’s equipped with nice and comfortable to use font set that allows user easy to navigate and detect the desired information among its abundance.'
 	}, {
-	  imgSmall: 'img/sammyicon_sm.jpg',
-	  imgMiddle: 'img/sammyicon_md.jpg',
-	  imgLarge: 'img/sammyicon_lg.jpg',
+	  imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/sammyicon_sm.jpg',
+	  imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/sammyicon_md.jpg',
+	  imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/sammyicon_lg.jpg',
+	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284701/shortcute/pinstants/mockups.jpg',
+	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284702/shortcute/pinstants/shots.jpg',
 	  title: 'Sammy Icon',
 	  description: 'The goal was to create an ultimately friendly interface suitable for users of all ages.',
 	  background: 'Sammy Icon is a known underwear manufacturer spread over the world: USA, Italy, Germany, Sweden, Canada, Russia, Ukraine and so on. The very first was designed by our team back in the days, so this time the client was needed a redesign. The audience: progressive youth and middle-aged males and females.',
@@ -22327,6 +22339,8 @@ webpackJsonp([0,3],[
 	          background = this.props.data[id].background,
 	          task = this.props.data[id].task,
 	          deliverables = this.props.data[id].deliverables,
+	          imgFeatured = this.props.data[id].imgFeatured,
+	          imgCase = this.props.data[id].imgCase,
 	          total = this.props.data.length - 1;
 
 	      var nextId = void 0,
@@ -22382,6 +22396,12 @@ webpackJsonp([0,3],[
 	          ),
 	          _react2.default.createElement('hr', null)
 	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement('img', { className: _style2.default.featuredImage, src: imgFeatured }),
+	          _react2.default.createElement('img', { className: _style2.default.caseImage, src: imgCase })
+	        ),
 	        _react2.default.createElement(_nextProject2.default, { nextProjectTitle: nextProjectTitle, nextProjectDescription: nextProjectDescription, nextLinkId: nextId }),
 	        _react2.default.createElement(_footer2.default, null)
 	      );
@@ -22398,7 +22418,7 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"arrowdown":"style__arrowdown___1sGrg","content":"style__content___1v4xN"};
+	module.exports = {"arrowdown":"style__arrowdown___xoWIx","content":"style__content___33dOr","caseImage":"style__caseImage___zDCIo","featuredImage":"style__featuredImage___12hhI"};
 
 /***/ },
 /* 229 */,
@@ -22461,7 +22481,7 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"icon":"style__icon___2WTt0"};
+	module.exports = {"icon":"style__icon___1gf-8"};
 
 /***/ },
 /* 234 */,
@@ -22484,9 +22504,9 @@ webpackJsonp([0,3],[
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _casenav = __webpack_require__(238);
+	var _caseNav = __webpack_require__(238);
 
-	var _casenav2 = _interopRequireDefault(_casenav);
+	var _caseNav2 = _interopRequireDefault(_caseNav);
 
 	var _ArrowIcon = __webpack_require__(232);
 
@@ -22554,7 +22574,7 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"logo":"style__logo___1s7se","arrowdown":"style__arrowdown___32oiV","content":"style__content___Xe4sJ","firstslide":"style__firstslide___ONu_w"};
+	module.exports = {"logo":"style__logo___2krqg","arrowdown":"style__arrowdown___1rFqK","content":"style__content___16Y54","firstslide":"style__firstslide___gdM3F"};
 
 /***/ },
 /* 237 */,
@@ -22680,7 +22700,7 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"navigation":"style__navigation___acgJg"};
+	module.exports = {"navigation":"style__navigation___3Z_dN"};
 
 /***/ },
 /* 240 */,
@@ -36534,7 +36554,7 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"contact":"style__contact___1cRnr","content":"style__content___3ImTN","contactText":"style__contactText___3ck9L","btn":"style__btn___1ewJU"};
+	module.exports = {"contact":"style__contact___Yi8_E","content":"style__content___2-QiL","contactText":"style__contactText___ik34a","btn":"style__btn___1izMz"};
 
 /***/ },
 /* 258 */,
@@ -36724,7 +36744,7 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"footer":"style__footer___3cc9i","mailLink":"style__mailLink___h8g50","iconLink":"style__iconLink___Yn6t-"};
+	module.exports = {"footer":"style__footer___2OnkF","mailLink":"style__mailLink___qMyCY","iconLink":"style__iconLink___hRv6h"};
 
 /***/ },
 /* 263 */,
@@ -36915,7 +36935,7 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"header":"style__header___pzE33","title":"style__title___XDc4q","nav":"style__nav___DSKqI","link":"style__link___1KFpP"};
+	module.exports = {"header":"style__header___2UWkf","title":"style__title___2qGNV","nav":"style__nav___2R-wo","link":"style__link___37fht"};
 
 /***/ },
 /* 268 */,
@@ -36987,7 +37007,7 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"layout":"style__layout___1yBhA"};
+	module.exports = {"layout":"style__layout___3ffdi"};
 
 /***/ },
 /* 271 */,
@@ -37014,9 +37034,9 @@ webpackJsonp([0,3],[
 
 	var _footer2 = _interopRequireDefault(_footer);
 
-	var _mainPageCases = __webpack_require__(273);
+	var _mainPage = __webpack_require__(273);
 
-	var _mainPageCases2 = _interopRequireDefault(_mainPageCases);
+	var _mainPage2 = _interopRequireDefault(_mainPage);
 
 	var _CasesList = __webpack_require__(226);
 
@@ -37050,7 +37070,7 @@ webpackJsonp([0,3],[
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'main' },
-	        _react2.default.createElement(_mainPageCases2.default, { data: this.state.cases })
+	        _react2.default.createElement(_mainPage2.default, { data: this.state.cases })
 	      );
 	    }
 	  }]);
@@ -37080,7 +37100,7 @@ webpackJsonp([0,3],[
 
 	var _item2 = _interopRequireDefault(_item);
 
-	var _first = __webpack_require__(295);
+	var _first = __webpack_require__(277);
 
 	var _first2 = _interopRequireDefault(_first);
 
@@ -37173,9 +37193,9 @@ webpackJsonp([0,3],[
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _casenav = __webpack_require__(238);
+	var _caseNav = __webpack_require__(238);
 
-	var _casenav2 = _interopRequireDefault(_casenav);
+	var _caseNav2 = _interopRequireDefault(_caseNav);
 
 	var _reactRouter = __webpack_require__(162);
 
@@ -37234,7 +37254,7 @@ webpackJsonp([0,3],[
 	            { className: _style2.default.text },
 	            _react2.default.createElement(
 	              'h1',
-	              null,
+	              { className: _style2.default.headline },
 	              title
 	            ),
 	            _react2.default.createElement(
@@ -37250,7 +37270,7 @@ webpackJsonp([0,3],[
 	          ),
 	          _react2.default.createElement('div', { className: _style2.default.img, style: bg })
 	        ),
-	        _react2.default.createElement(_casenav2.default, { number: number, total: total })
+	        _react2.default.createElement(_caseNav2.default, { number: number, total: total })
 	      );
 	    }
 	  }]);
@@ -37265,29 +37285,11 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"img":"style__img___2ot33","content":"style__content___8gZ8l","text":"style__text___1c2py","btn":"style__btn___2-UvF"};
+	module.exports = {"img":"style__img___1BUFQ","content":"style__content___2Bv8y","text":"style__text___aewYQ","headline":"style__headline___3btmk","btn":"style__btn___2XLmI"};
 
 /***/ },
 /* 276 */,
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37302,13 +37304,13 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(296);
+	var _style = __webpack_require__(278);
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _casenav = __webpack_require__(238);
+	var _caseNav = __webpack_require__(238);
 
-	var _casenav2 = _interopRequireDefault(_casenav);
+	var _caseNav2 = _interopRequireDefault(_caseNav);
 
 	var _ArrowIcon = __webpack_require__(232);
 
@@ -37373,7 +37375,7 @@ webpackJsonp([0,3],[
 	              '/shortcute is a digital design bureau that takes your project to the next level. Psst...we know the short cut.'
 	            )
 	          ),
-	          _react2.default.createElement(_casenav2.default, { total: total }),
+	          _react2.default.createElement(_caseNav2.default, { total: total }),
 	          _react2.default.createElement(
 	            'a',
 	            { className: _style2.default.arrowdown, onClick: this.clickHandler },
@@ -37390,15 +37392,15 @@ webpackJsonp([0,3],[
 	exports.default = First;
 
 /***/ },
-/* 296 */
+/* 278 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"logo":"style__logo___2QovE","arrowdown":"style__arrowdown___1icjO","content":"style__content___338ML","headline":"style__headline___MSpHF","firstslide":"style__firstslide___3glh-"};
+	module.exports = {"logo":"style__logo___1c5a9","arrowdown":"style__arrowdown___2R-7s","content":"style__content___3BMJV","headline":"style__headline___2htGj","firstslide":"style__firstslide___3eMS6"};
 
 /***/ },
-/* 297 */,
-/* 298 */
+/* 279 */,
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37413,27 +37415,27 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _first = __webpack_require__(299);
+	var _first = __webpack_require__(281);
 
 	var _first2 = _interopRequireDefault(_first);
 
-	var _what = __webpack_require__(302);
+	var _what = __webpack_require__(284);
 
 	var _what2 = _interopRequireDefault(_what);
 
-	var _how = __webpack_require__(307);
+	var _how = __webpack_require__(287);
 
 	var _how2 = _interopRequireDefault(_how);
 
-	var _clients = __webpack_require__(318);
+	var _clients = __webpack_require__(296);
 
 	var _clients2 = _interopRequireDefault(_clients);
 
-	var _team = __webpack_require__(325);
+	var _team = __webpack_require__(301);
 
 	var _team2 = _interopRequireDefault(_team);
 
-	var _contact = __webpack_require__(328);
+	var _contact = __webpack_require__(302);
 
 	var _contact2 = _interopRequireDefault(_contact);
 
@@ -37481,10 +37483,10 @@ webpackJsonp([0,3],[
 	exports.default = About;
 
 /***/ },
-/* 299 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -37496,9 +37498,13 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(300);
+	var _style = __webpack_require__(282);
 
 	var _style2 = _interopRequireDefault(_style);
+
+	var _ArrowIcon = __webpack_require__(232);
+
+	var _ArrowIcon2 = _interopRequireDefault(_ArrowIcon);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -37518,32 +37524,42 @@ webpackJsonp([0,3],[
 	  }
 
 	  _createClass(First, [{
-	    key: "render",
+	    key: 'clickHandler',
+	    value: function clickHandler(e) {
+	      e.preventDefault();
+	    }
+	  }, {
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "div",
+	        'div',
 	        { className: _style2.default.first },
 	        _react2.default.createElement(
-	          "div",
+	          'div',
 	          { className: _style2.default.content },
 	          _react2.default.createElement(
-	            "div",
+	            'div',
 	            { className: _style2.default.text },
 	            _react2.default.createElement(
-	              "h1",
+	              'h1',
 	              { className: _style2.default.logo },
-	              "/s"
+	              '/s'
 	            ),
 	            _react2.default.createElement(
-	              "h1",
-	              null,
-	              "About Us"
+	              'h1',
+	              { className: _style2.default.headline },
+	              'About Us'
 	            ),
 	            _react2.default.createElement(
-	              "p",
+	              'p',
 	              null,
-	              "When people over profits"
+	              '/shortcute is a digital design bureau that takes your project to the next level. Psst...we know the short cut.'
 	            )
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { className: _style2.default.arrowdown, onClick: this.clickHandler },
+	            _react2.default.createElement(_ArrowIcon2.default, null)
 	          )
 	        )
 	      );
@@ -37556,15 +37572,15 @@ webpackJsonp([0,3],[
 	exports.default = First;
 
 /***/ },
-/* 300 */
+/* 282 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"first":"style__first___H18Zo","logo":"style__logo___11KDT","content":"style__content___2w8DA","text":"style__text___2bxP7"};
+	module.exports = {"aboutSection":"style__aboutSection___2s7Y4","content":"style__content___3laV-","headline":"style__headline___X3wi2","text":"style__text___3W01M","clients":"style__clients___Yz7N0","client":"style__client___3oI8v","contact":"style__contact___2n9dB","contactText":"style__contactText___E37Hz","btn":"style__btn___3Eeks","first":"style__first___SRXqC","logo":"style__logo___1xuci","arrowdown":"style__arrowdown___1Cln1","items":"style__items___QX79p","item":"style__item___E08N7","employees":"style__employees___25bIl","employee":"style__employee___2R_vH"};
 
 /***/ },
-/* 301 */,
-/* 302 */
+/* 283 */,
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37579,15 +37595,15 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(303);
+	var _style = __webpack_require__(282);
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _MonitorIcon = __webpack_require__(305);
+	var _MonitorIcon = __webpack_require__(285);
 
 	var _MonitorIcon2 = _interopRequireDefault(_MonitorIcon);
 
-	var _SmartTabletIcon = __webpack_require__(306);
+	var _SmartTabletIcon = __webpack_require__(286);
 
 	var _SmartTabletIcon2 = _interopRequireDefault(_SmartTabletIcon);
 
@@ -37684,15 +37700,7 @@ webpackJsonp([0,3],[
 	exports.default = What;
 
 /***/ },
-/* 303 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-	module.exports = {"aboutSection":"style__aboutSection___1D4DY","content":"style__content___3028a","items":"style__items___2JqNU","item":"style__item___2PgW2","text":"style__text___2J9rr"};
-
-/***/ },
-/* 304 */,
-/* 305 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -37745,7 +37753,7 @@ webpackJsonp([0,3],[
 	exports.default = MonitorIcon;
 
 /***/ },
-/* 306 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -37798,7 +37806,7 @@ webpackJsonp([0,3],[
 	exports.default = SmartTabletIcon;
 
 /***/ },
-/* 307 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37813,39 +37821,39 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(308);
+	var _style = __webpack_require__(282);
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _BitmapIcon = __webpack_require__(310);
+	var _BitmapIcon = __webpack_require__(288);
 
 	var _BitmapIcon2 = _interopRequireDefault(_BitmapIcon);
 
-	var _CommentsIcon = __webpack_require__(311);
+	var _CommentsIcon = __webpack_require__(289);
 
 	var _CommentsIcon2 = _interopRequireDefault(_CommentsIcon);
 
-	var _LayersIcon = __webpack_require__(312);
+	var _LayersIcon = __webpack_require__(290);
 
 	var _LayersIcon2 = _interopRequireDefault(_LayersIcon);
 
-	var _ZoomInIcon = __webpack_require__(313);
+	var _ZoomInIcon = __webpack_require__(291);
 
 	var _ZoomInIcon2 = _interopRequireDefault(_ZoomInIcon);
 
-	var _DoubleTapIcon = __webpack_require__(314);
+	var _DoubleTapIcon = __webpack_require__(292);
 
 	var _DoubleTapIcon2 = _interopRequireDefault(_DoubleTapIcon);
 
-	var _PenPencilIcon = __webpack_require__(315);
+	var _PenPencilIcon = __webpack_require__(293);
 
 	var _PenPencilIcon2 = _interopRequireDefault(_PenPencilIcon);
 
-	var _SettingsIcon = __webpack_require__(316);
+	var _SettingsIcon = __webpack_require__(294);
 
 	var _SettingsIcon2 = _interopRequireDefault(_SettingsIcon);
 
-	var _WindowLayoutIcon = __webpack_require__(317);
+	var _WindowLayoutIcon = __webpack_require__(295);
 
 	var _WindowLayoutIcon2 = _interopRequireDefault(_WindowLayoutIcon);
 
@@ -38056,15 +38064,7 @@ webpackJsonp([0,3],[
 	exports.default = How;
 
 /***/ },
-/* 308 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-	module.exports = {"aboutSection":"style__aboutSection___3ucJU","content":"style__content___2geWP","items":"style__items___38t7i","item":"style__item___3WBc-","text":"style__text___1Q4Yl"};
-
-/***/ },
-/* 309 */,
-/* 310 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38117,7 +38117,7 @@ webpackJsonp([0,3],[
 	exports.default = BitmapIcon;
 
 /***/ },
-/* 311 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38170,7 +38170,7 @@ webpackJsonp([0,3],[
 	exports.default = CommentsIcon;
 
 /***/ },
-/* 312 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38223,7 +38223,7 @@ webpackJsonp([0,3],[
 	exports.default = LayersIcon;
 
 /***/ },
-/* 313 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38276,7 +38276,7 @@ webpackJsonp([0,3],[
 	exports.default = ZoomInIcon;
 
 /***/ },
-/* 314 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38329,7 +38329,7 @@ webpackJsonp([0,3],[
 	exports.default = DoubleTapIcon;
 
 /***/ },
-/* 315 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38382,7 +38382,7 @@ webpackJsonp([0,3],[
 	exports.default = PenPencilIcon;
 
 /***/ },
-/* 316 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38435,7 +38435,7 @@ webpackJsonp([0,3],[
 	exports.default = SettingsIcon;
 
 /***/ },
-/* 317 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38488,7 +38488,7 @@ webpackJsonp([0,3],[
 	exports.default = WindowLayoutIcon;
 
 /***/ },
-/* 318 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38503,27 +38503,27 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(319);
+	var _style = __webpack_require__(282);
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _PenPencilIcon = __webpack_require__(315);
+	var _PenPencilIcon = __webpack_require__(293);
 
 	var _PenPencilIcon2 = _interopRequireDefault(_PenPencilIcon);
 
-	var _BriefcaseIcon = __webpack_require__(321);
+	var _BriefcaseIcon = __webpack_require__(297);
 
 	var _BriefcaseIcon2 = _interopRequireDefault(_BriefcaseIcon);
 
-	var _BulbIcon = __webpack_require__(322);
+	var _BulbIcon = __webpack_require__(298);
 
 	var _BulbIcon2 = _interopRequireDefault(_BulbIcon);
 
-	var _ShapeIcon = __webpack_require__(323);
+	var _ShapeIcon = __webpack_require__(299);
 
 	var _ShapeIcon2 = _interopRequireDefault(_ShapeIcon);
 
-	var _UserMaleIcon = __webpack_require__(324);
+	var _UserMaleIcon = __webpack_require__(300);
 
 	var _UserMaleIcon2 = _interopRequireDefault(_UserMaleIcon);
 
@@ -38622,15 +38622,7 @@ webpackJsonp([0,3],[
 	exports.default = Clients;
 
 /***/ },
-/* 319 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-	module.exports = {"aboutSection":"style__aboutSection___30_7P","content":"style__content___nvQfz","text":"style__text___S3Gs_","clients":"style__clients___2zSwL","client":"style__client___17SJ_"};
-
-/***/ },
-/* 320 */,
-/* 321 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38683,7 +38675,7 @@ webpackJsonp([0,3],[
 	exports.default = BriefcaseIcon;
 
 /***/ },
-/* 322 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38736,7 +38728,7 @@ webpackJsonp([0,3],[
 	exports.default = BulbIcon;
 
 /***/ },
-/* 323 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38789,7 +38781,7 @@ webpackJsonp([0,3],[
 	exports.default = ShapeIcon;
 
 /***/ },
-/* 324 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38842,7 +38834,7 @@ webpackJsonp([0,3],[
 	exports.default = UserMaleIcon;
 
 /***/ },
-/* 325 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38857,7 +38849,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(326);
+	var _style = __webpack_require__(282);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -38972,15 +38964,7 @@ webpackJsonp([0,3],[
 	exports.default = Team;
 
 /***/ },
-/* 326 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-	module.exports = {"aboutSection":"style__aboutSection___1Cq6H","content":"style__content___3lEM0","text":"style__text___1_JKY","employees":"style__employees___38SWO","employee":"style__employee___MlU6D"};
-
-/***/ },
-/* 327 */,
-/* 328 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38995,7 +38979,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(329);
+	var _style = __webpack_require__(282);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -39055,15 +39039,7 @@ webpackJsonp([0,3],[
 	exports.default = Contact;
 
 /***/ },
-/* 329 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-	module.exports = {"contact":"style__contact___1SO-e","content":"style__content___2l0hO","contactText":"style__contactText___qPft4","btn":"style__btn___sOJTC"};
-
-/***/ },
-/* 330 */,
-/* 331 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39078,11 +39054,11 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _first = __webpack_require__(332);
+	var _first = __webpack_require__(304);
 
 	var _first2 = _interopRequireDefault(_first);
 
-	var _brief = __webpack_require__(336);
+	var _brief = __webpack_require__(308);
 
 	var _brief2 = _interopRequireDefault(_brief);
 
@@ -39121,7 +39097,7 @@ webpackJsonp([0,3],[
 	exports.default = Contacts;
 
 /***/ },
-/* 332 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39136,7 +39112,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(333);
+	var _style = __webpack_require__(305);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -39148,7 +39124,7 @@ webpackJsonp([0,3],[
 
 	var _DribbleIcon2 = _interopRequireDefault(_DribbleIcon);
 
-	var _MailIcon = __webpack_require__(335);
+	var _MailIcon = __webpack_require__(307);
 
 	var _MailIcon2 = _interopRequireDefault(_MailIcon);
 
@@ -39228,15 +39204,15 @@ webpackJsonp([0,3],[
 	exports.default = First;
 
 /***/ },
-/* 333 */
+/* 305 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"first":"style__first___3jAaw","logo":"style__logo___UY6Xg","content":"style__content___adBXG","text":"style__text___3K5re","link":"style__link___ed49y"};
+	module.exports = {"first":"style__first___AH149","logo":"style__logo___3JCJc","content":"style__content___wS6NJ","text":"style__text___3LAgg","link":"style__link___1L95e"};
 
 /***/ },
-/* 334 */,
-/* 335 */
+/* 306 */,
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39289,7 +39265,7 @@ webpackJsonp([0,3],[
 	exports.default = MailIcon;
 
 /***/ },
-/* 336 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39304,7 +39280,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(337);
+	var _style = __webpack_require__(309);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -39364,11 +39340,11 @@ webpackJsonp([0,3],[
 	exports.default = Brief;
 
 /***/ },
-/* 337 */
+/* 309 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"brief":"style__brief___3Bp0V","content":"style__content___pJNYH","text":"style__text___LAbCe","btn":"style__btn___1lc42"};
+	module.exports = {"brief":"style__brief___3Ctdu","content":"style__content___2CbQK","text":"style__text___2NGqS","btn":"style__btn___25-Cq"};
 
 /***/ }
 ]);
