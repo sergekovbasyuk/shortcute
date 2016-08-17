@@ -22222,8 +22222,8 @@ webpackJsonp([0,3],[
 	  imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/smoliar_sm.jpg',
 	  imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/smoliar_md.jpg',
 	  imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/smoliar_lg.jpg',
-	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284701/shortcute/pinstants/mockups.jpg',
-	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284702/shortcute/pinstants/shots.jpg',
+	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419529/shortcute/smoliar/mockups.jpg',
+	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419530/shortcute/smoliar/shots.jpg',
 	  title: 'Alexei Smoliar',
 	  description: 'A known movie director assistant\'s responsive website.',
 	  background: 'The client is a known movie director assistant which has a great credits list that includes famous movies (mostly over CIS countries) and partnerships with respected directors.',
@@ -22244,8 +22244,8 @@ webpackJsonp([0,3],[
 	  imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283689/shortcute/silver_sm.jpg',
 	  imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/silver_md.jpg',
 	  imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283692/shortcute/silver_lg.jpg',
-	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284701/shortcute/pinstants/mockups.jpg',
-	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284702/shortcute/pinstants/shots.jpg',
+	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419315/shortcute/dubai/mockups.jpg',
+	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419316/shortcute/dubai/shots.jpg',
 	  title: 'Dubai Table',
 	  description: 'Our client wanted a design for his app named Dubai Table that helps people to find best restaurants in Dubai.',
 	  background: 'The client is a startup that aims to impelement new services in not-so-crowded UAE app market.',
@@ -22255,8 +22255,8 @@ webpackJsonp([0,3],[
 	  imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/kuan_sm.jpg',
 	  imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/kuan_md.jpg',
 	  imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/kuan_lg.jpg',
-	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284701/shortcute/pinstants/mockups.jpg',
-	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284702/shortcute/pinstants/shots.jpg',
+	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419383/shortcute/kuan/mockups.jpg',
+	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419384/shortcute/kuan/shots.jpg',
 	  title: 'Kuan',
 	  description: 'Our goal was to create business style website for Chinese financial start-up in extremely short terms.',
 	  background: 'Kuan Inc. is a London-Hong Kong based Financial Technology (Fintech) company offering Peer-to-Peer (P2P) foreign exchange services for businesses trading between Europe and Asia.',
@@ -22266,8 +22266,8 @@ webpackJsonp([0,3],[
 	  imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/sammyicon_sm.jpg',
 	  imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/sammyicon_md.jpg',
 	  imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/sammyicon_lg.jpg',
-	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284701/shortcute/pinstants/mockups.jpg',
-	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284702/shortcute/pinstants/shots.jpg',
+	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419465/shortcute/sammyicon/mockups.jpg',
+	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419465/shortcute/sammyicon/shots.jpg',
 	  title: 'Sammy Icon',
 	  description: 'The goal was to create an ultimately friendly interface suitable for users of all ages.',
 	  background: 'Sammy Icon is a known underwear manufacturer spread over the world: USA, Italy, Germany, Sweden, Canada, Russia, Ukraine and so on. The very first was designed by our team back in the days, so this time the client was needed a redesign. The audience: progressive youth and middle-aged males and females.',
@@ -39054,13 +39054,21 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _first = __webpack_require__(304);
+	var _style = __webpack_require__(304);
 
-	var _first2 = _interopRequireDefault(_first);
+	var _style2 = _interopRequireDefault(_style);
 
-	var _brief = __webpack_require__(308);
+	var _BehanceIcon = __webpack_require__(260);
 
-	var _brief2 = _interopRequireDefault(_brief);
+	var _BehanceIcon2 = _interopRequireDefault(_BehanceIcon);
+
+	var _DribbleIcon = __webpack_require__(261);
+
+	var _DribbleIcon2 = _interopRequireDefault(_DribbleIcon);
+
+	var _MailIcon = __webpack_require__(306);
+
+	var _MailIcon2 = _interopRequireDefault(_MailIcon);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39085,107 +39093,62 @@ webpackJsonp([0,3],[
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'container' },
-	        _react2.default.createElement(_first2.default, null),
-	        _react2.default.createElement(_brief2.default, null)
-	      );
-	    }
-	  }]);
-
-	  return Contacts;
-	}(_react2.default.Component);
-
-	exports.default = Contacts;
-
-/***/ },
-/* 304 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _style = __webpack_require__(305);
-
-	var _style2 = _interopRequireDefault(_style);
-
-	var _BehanceIcon = __webpack_require__(260);
-
-	var _BehanceIcon2 = _interopRequireDefault(_BehanceIcon);
-
-	var _DribbleIcon = __webpack_require__(261);
-
-	var _DribbleIcon2 = _interopRequireDefault(_DribbleIcon);
-
-	var _MailIcon = __webpack_require__(307);
-
-	var _MailIcon2 = _interopRequireDefault(_MailIcon);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var First = function (_React$Component) {
-	  _inherits(First, _React$Component);
-
-	  function First() {
-	    _classCallCheck(this, First);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(First).apply(this, arguments));
-	  }
-
-	  _createClass(First, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: _style2.default.first },
 	        _react2.default.createElement(
 	          'div',
-	          { className: _style2.default.content },
+	          { className: _style2.default.first },
 	          _react2.default.createElement(
 	            'div',
-	            { className: _style2.default.text },
+	            { className: _style2.default.content },
 	            _react2.default.createElement(
-	              'h1',
-	              { className: _style2.default.logo },
-	              '/s'
-	            ),
+	              'div',
+	              { className: _style2.default.text },
+	              _react2.default.createElement(
+	                'h1',
+	                { className: _style2.default.logo },
+	                '/s'
+	              ),
+	              _react2.default.createElement(
+	                'h1',
+	                null,
+	                'Contacts'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'When people over profits'
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: '', className: _style2.default.link },
+	                _react2.default.createElement(_BehanceIcon2.default, null),
+	                '/shortcute'
+	              ),
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'a',
+	                { href: '', className: _style2.default.link },
+	                _react2.default.createElement(_DribbleIcon2.default, null),
+	                '@shortcute'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: _style2.default.content },
 	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              'Contacts'
+	              'div',
+	              { className: _style2.default.text },
+	              _react2.default.createElement(
+	                'h1',
+	                null,
+	                'Drop a line'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'When people over profits.'
+	              )
 	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'When people over profits'
-	            ),
-	            _react2.default.createElement(
-	              'a',
-	              { href: '', className: _style2.default.link },
-	              _react2.default.createElement(_BehanceIcon2.default, null),
-	              '/shortcute'
-	            ),
-	            _react2.default.createElement('br', null),
-	            _react2.default.createElement(
-	              'a',
-	              { href: '', className: _style2.default.link },
-	              _react2.default.createElement(_DribbleIcon2.default, null),
-	              '@shortcute'
-	            ),
-	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'mailto:hi@shortcute.xyz', className: _style2.default.link },
@@ -39198,21 +39161,21 @@ webpackJsonp([0,3],[
 	    }
 	  }]);
 
-	  return First;
+	  return Contacts;
 	}(_react2.default.Component);
 
-	exports.default = First;
+	exports.default = Contacts;
 
 /***/ },
-/* 305 */
+/* 304 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"first":"style__first___AH149","logo":"style__logo___3JCJc","content":"style__content___wS6NJ","text":"style__text___3LAgg","link":"style__link___1L95e"};
+	module.exports = {"first":"style__first___hOZqF","logo":"style__logo___1L78D","content":"style__content___3GNvE","text":"style__text___1BvNH","navigation":"style__navigation___1dHHP","link":"style__link___1zSFf","btn":"style__btn___117Tg"};
 
 /***/ },
-/* 306 */,
-/* 307 */
+/* 305 */,
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39263,88 +39226,6 @@ webpackJsonp([0,3],[
 	}(_react2.default.Component);
 
 	exports.default = MailIcon;
-
-/***/ },
-/* 308 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _style = __webpack_require__(309);
-
-	var _style2 = _interopRequireDefault(_style);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Brief = function (_React$Component) {
-	  _inherits(Brief, _React$Component);
-
-	  function Brief() {
-	    _classCallCheck(this, Brief);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Brief).apply(this, arguments));
-	  }
-
-	  _createClass(Brief, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: _style2.default.brief },
-	        _react2.default.createElement(
-	          'div',
-	          { className: _style2.default.content },
-	          _react2.default.createElement(
-	            'div',
-	            { className: _style2.default.text },
-	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              'Fill a brief'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'The form of which is determined by set rules, of all the possible arguments and information on one side of a controversy.'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: '', className: _style2.default.btn },
-	            'send'
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Brief;
-	}(_react2.default.Component);
-
-	exports.default = Brief;
-
-/***/ },
-/* 309 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-	module.exports = {"brief":"style__brief___3Ctdu","content":"style__content___2CbQK","text":"style__text___2NGqS","btn":"style__btn___25-Cq"};
 
 /***/ }
 ]);
