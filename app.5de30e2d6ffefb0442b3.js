@@ -16516,15 +16516,15 @@ webpackJsonp([0,3],[
 
 	var _layout2 = _interopRequireDefault(_layout);
 
-	var _about = __webpack_require__(280);
+	var _about = __webpack_require__(281);
 
 	var _about2 = _interopRequireDefault(_about);
 
-	var _contacts = __webpack_require__(303);
+	var _contacts = __webpack_require__(304);
 
 	var _contacts2 = _interopRequireDefault(_contacts);
 
-	var _main = __webpack_require__(272);
+	var _main = __webpack_require__(273);
 
 	var _main2 = _interopRequireDefault(_main);
 
@@ -22233,8 +22233,8 @@ webpackJsonp([0,3],[
 	  imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/minuteoflife_sm.jpg',
 	  imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/minuteoflife_md.jpg',
 	  imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/minuteoflife_lg.jpg',
-	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284701/shortcute/pinstants/mockups.jpg',
-	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284702/shortcute/pinstants/shots.jpg',
+	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471421855/shortcute/minutesoflife/mockups.jpg',
+	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471421677/shortcute/minutesoflife/shots.jpg',
 	  title: 'Minute of Life',
 	  description: 'The goal was to create an ultimately friendly interface suitable for users of all ages.',
 	  background: 'Our client is Brainberry Global — augmented reality team that has launched a video messenger which features leaving video messages on physical objects. The very first version of website was launched back in 2014 and in the end of 2015 it was decided to make a redesign of service and the guys turned to us.',
@@ -36767,11 +36767,11 @@ webpackJsonp([0,3],[
 
 	var _header2 = _interopRequireDefault(_header);
 
-	var _style = __webpack_require__(270);
+	var _style = __webpack_require__(271);
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _main = __webpack_require__(272);
+	var _main = __webpack_require__(273);
 
 	var _main2 = _interopRequireDefault(_main);
 
@@ -36798,7 +36798,7 @@ webpackJsonp([0,3],[
 	      return _react2.default.createElement(
 	        'div',
 	        { className: _style2.default.layout },
-	        _react2.default.createElement(_header2.default, null),
+	        _react2.default.createElement(_header2.default, { location: this.props.location }),
 	        this.props.children
 	      );
 	    }
@@ -36829,7 +36829,7 @@ webpackJsonp([0,3],[
 
 	var _Title2 = _interopRequireDefault(_Title);
 
-	var _Nav = __webpack_require__(269);
+	var _Nav = __webpack_require__(270);
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -36860,7 +36860,7 @@ webpackJsonp([0,3],[
 	      return _react2.default.createElement(
 	        'header',
 	        { className: _style2.default.header },
-	        _react2.default.createElement(_Title2.default, { title: '/shortcute' }),
+	        _react2.default.createElement(_Title2.default, { location: this.props.location, title: '/shortcute' }),
 	        _react2.default.createElement(_Nav2.default, null)
 	      );
 	    }
@@ -36893,6 +36893,10 @@ webpackJsonp([0,3],[
 
 	var _style2 = _interopRequireDefault(_style);
 
+	var _ArrowIconLeft = __webpack_require__(269);
+
+	var _ArrowIconLeft2 = _interopRequireDefault(_ArrowIconLeft);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -36913,14 +36917,40 @@ webpackJsonp([0,3],[
 	  _createClass(Title, [{
 	    key: 'render',
 	    value: function render() {
+	      var logoBack = void 0;
+
+	      if (this.props.location.pathname.indexOf('/cases/') === 0 && window.innerWidth > 700) {
+	        logoBack = _react2.default.createElement(
+	          'h1',
+	          { className: _style2.default.titleBack },
+	          _react2.default.createElement(
+	            _reactRouter.IndexLink,
+	            { to: '/', className: _style2.default.link },
+	            '/s',
+	            _react2.default.createElement(_ArrowIconLeft2.default, null),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'back home'
+	            )
+	          )
+	        );
+	      } else {
+	        logoBack = _react2.default.createElement(
+	          'h1',
+	          { className: _style2.default.title },
+	          _react2.default.createElement(
+	            _reactRouter.IndexLink,
+	            { to: '/', className: _style2.default.link },
+	            this.props.title
+	          )
+	        );
+	      }
+
 	      return _react2.default.createElement(
-	        'h1',
-	        { className: _style2.default.title },
-	        _react2.default.createElement(
-	          _reactRouter.IndexLink,
-	          { to: '/', className: _style2.default.link, activeClassName: _style2.default.activelink },
-	          this.props.title
-	        )
+	        'div',
+	        null,
+	        logoBack
 	      );
 	    }
 	  }]);
@@ -36935,11 +36965,64 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"header":"style__header___2UWkf","title":"style__title___2qGNV","nav":"style__nav___2R-wo","link":"style__link___37fht"};
+	module.exports = {"header":"style__header___2UWkf","title":"style__title___2qGNV","nav":"style__nav___2R-wo","titleBack":"style__titleBack___l-GJ_","link":"style__link___37fht"};
 
 /***/ },
 /* 268 */,
 /* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _style = __webpack_require__(233);
+
+	var _style2 = _interopRequireDefault(_style);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ArrowIconLeft = function (_React$Component) {
+	  _inherits(ArrowIconLeft, _React$Component);
+
+	  function ArrowIconLeft() {
+	    _classCallCheck(this, ArrowIconLeft);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(ArrowIconLeft).apply(this, arguments));
+	  }
+
+	  _createClass(ArrowIconLeft, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "svg",
+	        { className: _style2.default.icon, width: "29", height: "11", viewBox: "0 0 29 11" },
+	        _react2.default.createElement("path", { d: "M10 4.2h19v2H6v4c-.5.4-1 .4-1.5 0L.3 6C0 5.5 0 5 .3 4.4L4.5.3C5 0 5.5 0 6 .3v4h4z", fill: "#292929", fillRule: "evenodd" })
+	      );
+	    }
+	  }]);
+
+	  return ArrowIconLeft;
+	}(_react2.default.Component);
+
+	exports.default = ArrowIconLeft;
+
+/***/ },
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37003,15 +37086,15 @@ webpackJsonp([0,3],[
 	exports.default = Nav;
 
 /***/ },
-/* 270 */
+/* 271 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"layout":"style__layout___3ffdi"};
 
 /***/ },
-/* 271 */,
-/* 272 */
+/* 272 */,
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37034,7 +37117,7 @@ webpackJsonp([0,3],[
 
 	var _footer2 = _interopRequireDefault(_footer);
 
-	var _mainPage = __webpack_require__(273);
+	var _mainPage = __webpack_require__(274);
 
 	var _mainPage2 = _interopRequireDefault(_mainPage);
 
@@ -37081,7 +37164,7 @@ webpackJsonp([0,3],[
 	exports.default = Main;
 
 /***/ },
-/* 273 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37096,11 +37179,11 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _item = __webpack_require__(274);
+	var _item = __webpack_require__(275);
 
 	var _item2 = _interopRequireDefault(_item);
 
-	var _first = __webpack_require__(277);
+	var _first = __webpack_require__(278);
 
 	var _first2 = _interopRequireDefault(_first);
 
@@ -37174,7 +37257,7 @@ webpackJsonp([0,3],[
 	exports.default = Cases;
 
 /***/ },
-/* 274 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37189,7 +37272,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(275);
+	var _style = __webpack_require__(276);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -37281,15 +37364,15 @@ webpackJsonp([0,3],[
 	exports.default = Item;
 
 /***/ },
-/* 275 */
+/* 276 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"img":"style__img___1BUFQ","content":"style__content___2Bv8y","text":"style__text___aewYQ","headline":"style__headline___3btmk","btn":"style__btn___2XLmI"};
 
 /***/ },
-/* 276 */,
-/* 277 */
+/* 277 */,
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37304,7 +37387,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(278);
+	var _style = __webpack_require__(279);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -37392,15 +37475,15 @@ webpackJsonp([0,3],[
 	exports.default = First;
 
 /***/ },
-/* 278 */
+/* 279 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"logo":"style__logo___1c5a9","arrowdown":"style__arrowdown___2R-7s","content":"style__content___3BMJV","headline":"style__headline___2htGj","firstslide":"style__firstslide___3eMS6"};
 
 /***/ },
-/* 279 */,
-/* 280 */
+/* 280 */,
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37415,27 +37498,27 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _first = __webpack_require__(281);
+	var _first = __webpack_require__(282);
 
 	var _first2 = _interopRequireDefault(_first);
 
-	var _what = __webpack_require__(284);
+	var _what = __webpack_require__(285);
 
 	var _what2 = _interopRequireDefault(_what);
 
-	var _how = __webpack_require__(287);
+	var _how = __webpack_require__(288);
 
 	var _how2 = _interopRequireDefault(_how);
 
-	var _clients = __webpack_require__(296);
+	var _clients = __webpack_require__(297);
 
 	var _clients2 = _interopRequireDefault(_clients);
 
-	var _team = __webpack_require__(301);
+	var _team = __webpack_require__(302);
 
 	var _team2 = _interopRequireDefault(_team);
 
-	var _contact = __webpack_require__(302);
+	var _contact = __webpack_require__(303);
 
 	var _contact2 = _interopRequireDefault(_contact);
 
@@ -37483,7 +37566,7 @@ webpackJsonp([0,3],[
 	exports.default = About;
 
 /***/ },
-/* 281 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37498,7 +37581,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(282);
+	var _style = __webpack_require__(283);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -37572,15 +37655,15 @@ webpackJsonp([0,3],[
 	exports.default = First;
 
 /***/ },
-/* 282 */
+/* 283 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"aboutSection":"style__aboutSection___2s7Y4","content":"style__content___3laV-","headline":"style__headline___X3wi2","text":"style__text___3W01M","clients":"style__clients___Yz7N0","client":"style__client___3oI8v","contact":"style__contact___2n9dB","contactText":"style__contactText___E37Hz","btn":"style__btn___3Eeks","first":"style__first___SRXqC","logo":"style__logo___1xuci","arrowdown":"style__arrowdown___1Cln1","items":"style__items___QX79p","item":"style__item___E08N7","employees":"style__employees___25bIl","employee":"style__employee___2R_vH"};
 
 /***/ },
-/* 283 */,
-/* 284 */
+/* 284 */,
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37595,15 +37678,15 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(282);
+	var _style = __webpack_require__(283);
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _MonitorIcon = __webpack_require__(285);
+	var _MonitorIcon = __webpack_require__(286);
 
 	var _MonitorIcon2 = _interopRequireDefault(_MonitorIcon);
 
-	var _SmartTabletIcon = __webpack_require__(286);
+	var _SmartTabletIcon = __webpack_require__(287);
 
 	var _SmartTabletIcon2 = _interopRequireDefault(_SmartTabletIcon);
 
@@ -37700,7 +37783,7 @@ webpackJsonp([0,3],[
 	exports.default = What;
 
 /***/ },
-/* 285 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -37753,7 +37836,7 @@ webpackJsonp([0,3],[
 	exports.default = MonitorIcon;
 
 /***/ },
-/* 286 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -37806,7 +37889,7 @@ webpackJsonp([0,3],[
 	exports.default = SmartTabletIcon;
 
 /***/ },
-/* 287 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37821,39 +37904,39 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(282);
+	var _style = __webpack_require__(283);
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _BitmapIcon = __webpack_require__(288);
+	var _BitmapIcon = __webpack_require__(289);
 
 	var _BitmapIcon2 = _interopRequireDefault(_BitmapIcon);
 
-	var _CommentsIcon = __webpack_require__(289);
+	var _CommentsIcon = __webpack_require__(290);
 
 	var _CommentsIcon2 = _interopRequireDefault(_CommentsIcon);
 
-	var _LayersIcon = __webpack_require__(290);
+	var _LayersIcon = __webpack_require__(291);
 
 	var _LayersIcon2 = _interopRequireDefault(_LayersIcon);
 
-	var _ZoomInIcon = __webpack_require__(291);
+	var _ZoomInIcon = __webpack_require__(292);
 
 	var _ZoomInIcon2 = _interopRequireDefault(_ZoomInIcon);
 
-	var _DoubleTapIcon = __webpack_require__(292);
+	var _DoubleTapIcon = __webpack_require__(293);
 
 	var _DoubleTapIcon2 = _interopRequireDefault(_DoubleTapIcon);
 
-	var _PenPencilIcon = __webpack_require__(293);
+	var _PenPencilIcon = __webpack_require__(294);
 
 	var _PenPencilIcon2 = _interopRequireDefault(_PenPencilIcon);
 
-	var _SettingsIcon = __webpack_require__(294);
+	var _SettingsIcon = __webpack_require__(295);
 
 	var _SettingsIcon2 = _interopRequireDefault(_SettingsIcon);
 
-	var _WindowLayoutIcon = __webpack_require__(295);
+	var _WindowLayoutIcon = __webpack_require__(296);
 
 	var _WindowLayoutIcon2 = _interopRequireDefault(_WindowLayoutIcon);
 
@@ -38064,7 +38147,7 @@ webpackJsonp([0,3],[
 	exports.default = How;
 
 /***/ },
-/* 288 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38117,7 +38200,7 @@ webpackJsonp([0,3],[
 	exports.default = BitmapIcon;
 
 /***/ },
-/* 289 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38170,7 +38253,7 @@ webpackJsonp([0,3],[
 	exports.default = CommentsIcon;
 
 /***/ },
-/* 290 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38223,7 +38306,7 @@ webpackJsonp([0,3],[
 	exports.default = LayersIcon;
 
 /***/ },
-/* 291 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38276,7 +38359,7 @@ webpackJsonp([0,3],[
 	exports.default = ZoomInIcon;
 
 /***/ },
-/* 292 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38329,7 +38412,7 @@ webpackJsonp([0,3],[
 	exports.default = DoubleTapIcon;
 
 /***/ },
-/* 293 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38382,7 +38465,7 @@ webpackJsonp([0,3],[
 	exports.default = PenPencilIcon;
 
 /***/ },
-/* 294 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38435,7 +38518,7 @@ webpackJsonp([0,3],[
 	exports.default = SettingsIcon;
 
 /***/ },
-/* 295 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38488,7 +38571,7 @@ webpackJsonp([0,3],[
 	exports.default = WindowLayoutIcon;
 
 /***/ },
-/* 296 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38503,27 +38586,27 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(282);
+	var _style = __webpack_require__(283);
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _PenPencilIcon = __webpack_require__(293);
+	var _PenPencilIcon = __webpack_require__(294);
 
 	var _PenPencilIcon2 = _interopRequireDefault(_PenPencilIcon);
 
-	var _BriefcaseIcon = __webpack_require__(297);
+	var _BriefcaseIcon = __webpack_require__(298);
 
 	var _BriefcaseIcon2 = _interopRequireDefault(_BriefcaseIcon);
 
-	var _BulbIcon = __webpack_require__(298);
+	var _BulbIcon = __webpack_require__(299);
 
 	var _BulbIcon2 = _interopRequireDefault(_BulbIcon);
 
-	var _ShapeIcon = __webpack_require__(299);
+	var _ShapeIcon = __webpack_require__(300);
 
 	var _ShapeIcon2 = _interopRequireDefault(_ShapeIcon);
 
-	var _UserMaleIcon = __webpack_require__(300);
+	var _UserMaleIcon = __webpack_require__(301);
 
 	var _UserMaleIcon2 = _interopRequireDefault(_UserMaleIcon);
 
@@ -38622,7 +38705,7 @@ webpackJsonp([0,3],[
 	exports.default = Clients;
 
 /***/ },
-/* 297 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38675,7 +38758,7 @@ webpackJsonp([0,3],[
 	exports.default = BriefcaseIcon;
 
 /***/ },
-/* 298 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38728,7 +38811,7 @@ webpackJsonp([0,3],[
 	exports.default = BulbIcon;
 
 /***/ },
-/* 299 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38781,7 +38864,7 @@ webpackJsonp([0,3],[
 	exports.default = ShapeIcon;
 
 /***/ },
-/* 300 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38834,7 +38917,7 @@ webpackJsonp([0,3],[
 	exports.default = UserMaleIcon;
 
 /***/ },
-/* 301 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38849,7 +38932,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(282);
+	var _style = __webpack_require__(283);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -38964,7 +39047,7 @@ webpackJsonp([0,3],[
 	exports.default = Team;
 
 /***/ },
-/* 302 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38979,7 +39062,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(282);
+	var _style = __webpack_require__(283);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -39039,7 +39122,7 @@ webpackJsonp([0,3],[
 	exports.default = Contact;
 
 /***/ },
-/* 303 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39054,7 +39137,7 @@ webpackJsonp([0,3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(304);
+	var _style = __webpack_require__(305);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -39066,7 +39149,7 @@ webpackJsonp([0,3],[
 
 	var _DribbleIcon2 = _interopRequireDefault(_DribbleIcon);
 
-	var _MailIcon = __webpack_require__(306);
+	var _MailIcon = __webpack_require__(307);
 
 	var _MailIcon2 = _interopRequireDefault(_MailIcon);
 
@@ -39167,15 +39250,15 @@ webpackJsonp([0,3],[
 	exports.default = Contacts;
 
 /***/ },
-/* 304 */
+/* 305 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"first":"style__first___hOZqF","logo":"style__logo___1L78D","content":"style__content___3GNvE","text":"style__text___1BvNH","navigation":"style__navigation___1dHHP","link":"style__link___1zSFf","btn":"style__btn___117Tg"};
 
 /***/ },
-/* 305 */,
-/* 306 */
+/* 306 */,
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
