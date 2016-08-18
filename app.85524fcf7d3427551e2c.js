@@ -22233,7 +22233,7 @@ webpackJsonp([0,3],[
 	  imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/minuteoflife_sm.jpg',
 	  imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/minuteoflife_md.jpg',
 	  imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/minuteoflife_lg.jpg',
-	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471421855/shortcute/minutesoflife/mockups.jpg',
+	  imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471515055/shortcute/minutesoflife/mockups.jpg',
 	  imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471421677/shortcute/minutesoflife/shots.jpg',
 	  title: 'Minute of Life',
 	  description: 'The goal was to create an ultimately friendly interface suitable for users of all ages.',
@@ -22339,6 +22339,9 @@ webpackJsonp([0,3],[
 	          background = this.props.data[id].background,
 	          task = this.props.data[id].task,
 	          deliverables = this.props.data[id].deliverables,
+	          imgSmall = this.props.data[id].imgSmall,
+	          imgMiddle = this.props.data[id].imgMiddle,
+	          imgLarge = this.props.data[id].imgLarge,
 	          imgFeatured = this.props.data[id].imgFeatured,
 	          imgCase = this.props.data[id].imgCase,
 	          total = this.props.data.length - 1;
@@ -22360,7 +22363,7 @@ webpackJsonp([0,3],[
 	      return _react2.default.createElement(
 	        'div',
 	        { className: _style2.default.case },
-	        _react2.default.createElement(_first2.default, { title: title, description: description }),
+	        _react2.default.createElement(_first2.default, { title: title, description: description, imgSmall: imgSmall, imgMiddle: imgMiddle, imgLarge: imgLarge }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: _style2.default.content },
@@ -22508,10 +22511,6 @@ webpackJsonp([0,3],[
 
 	var _caseNav2 = _interopRequireDefault(_caseNav);
 
-	var _ArrowIcon = __webpack_require__(232);
-
-	var _ArrowIcon2 = _interopRequireDefault(_ArrowIcon);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22532,7 +22531,28 @@ webpackJsonp([0,3],[
 	  _createClass(First, [{
 	    key: 'render',
 	    value: function render() {
-	      var total = this.props.total;
+	      var title = this.props.title,
+	          description = this.props.description,
+	          imgSmall = this.props.imgSmall,
+	          imgMiddle = this.props.imgMiddle,
+	          imgLarge = this.props.imgLarge,
+	          total = this.props.total;
+
+	      var bg;
+
+	      if (window.innerWidth > 1440) {
+	        bg = {
+	          backgroundImage: 'url(' + imgLarge + ')'
+	        };
+	      } else if (window.innerWidth > 600) {
+	        bg = {
+	          backgroundImage: 'url(' + imgMiddle + ')'
+	        };
+	      } else {
+	        bg = {
+	          backgroundImage: 'url(' + imgSmall + ')'
+	        };
+	      }
 
 	      return _react2.default.createElement(
 	        'div',
@@ -22545,20 +22565,16 @@ webpackJsonp([0,3],[
 	            { className: _style2.default.text },
 	            _react2.default.createElement(
 	              'h1',
-	              null,
-	              this.props.title
+	              { className: _style2.default.headline },
+	              title
 	            ),
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              this.props.description
+	              description
 	            )
 	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { className: _style2.default.arrowdown },
-	            _react2.default.createElement(_ArrowIcon2.default, null)
-	          )
+	          _react2.default.createElement('div', { className: _style2.default.img, style: bg })
 	        )
 	      );
 	    }
@@ -22574,7 +22590,7 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"logo":"style__logo___2krqg","arrowdown":"style__arrowdown___1rFqK","content":"style__content___16Y54","firstslide":"style__firstslide___gdM3F"};
+	module.exports = {"img":"style__img___2wemX","content":"style__content___16Y54","text":"style__text___2rYdW","headline":"style__headline___-lJ-T","logo":"style__logo___2krqg","firstslide":"style__firstslide___gdM3F"};
 
 /***/ },
 /* 237 */,
@@ -36675,8 +36691,8 @@ webpackJsonp([0,3],[
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "svg",
-	        { className: _style2.default.icon, width: "25", height: "16", viewBox: "0 0 25 16" },
-	        _react2.default.createElement("path", { d: "M22.6 2.3h-6.3V.7h6.3v1.6zM12 8.8c.5.7.7 1.5.7 2.4 0 1-.2 1.8-.6 2.5-.2.5-.6 1-1 1.3-.5.4-1 .6-1.8.8L7 16H0V0h7.5c2 0 3.2.6 4 1.7.5.7.8 1.5.8 2.4 0 1-.3 2-.8 2.5-.2.3-.6.6-1.2 1 .8.2 1.4.7 1.8 1.3zM3.7 6.3H7c.6 0 1 0 1.5-.4.4-.4.7-.8.7-1.5S9 3.3 8.2 3l-1.7-.2h-3v3.5zm6 4.6c0-1-.5-1.5-1-1.8L6.8 9H3.5v4.2H7c.5 0 1 0 1.4-.3.7-.4 1-1 1-2zm15.3-2.7v2.3h-8c0 1.2.3 2 1 2.4.5.3 1 .5 1.7.5.6 0 1.2-.2 1.6-.6l.6-.8h2.8c0 .6-.4 1.3-1 2-1 1-2.4 1.7-4.2 1.7-1.5 0-2.8-.6-4-1.5-1-1-1.7-2.5-1.7-4.6 0-2 .5-3.6 1.5-4.7 1-1 2.3-1.6 4-1.6 1 0 1.8.2 2.6.6 1 .3 1.5 1 2 1.7s.8 1.4 1 2.3zm-3 .3c0-.8-.3-1.4-.8-1.8-.5-.4-1-.6-1.7-.6-.8 0-1.4.2-1.8.7-.4.3-.6 1-.7 1.6h5z", fill: "#292929", fillRule: "evenodd" })
+	        { className: _style2.default.icon, width: "32", height: "22", viewBox: "0 0 32 22" },
+	        _react2.default.createElement("path", { d: "M29 5h-8c-.6 0-1-.5-1-1 0-.6.4-1 1-1h8c.6 0 1 .4 1 1 0 .5-.4 1-1 1zm-4 2c4.2 0 7 2.8 7 7 0 .5-.4 1-1 1H20c0 2.4 1.6 5 5 5 2.5 0 3.3-.8 4.2-1.7l.8.7.7.7c-1 1-2.3 2.3-5.7 2.3-4.6 0-7-3.5-7-7 0-5 2.6-8 7-8zm5 6c-.4-2.5-2.2-4-5-4-2.7 0-4.3 1.4-4.8 4H30zm-14 3c0 3.8-2.3 6-6.5 6h-.3H1c-.6 0-1-.5-1-1V1c0-.6.4-1 1-1h8c3.5 0 6 2.5 6 6 0 2-.8 3.6-2.2 4.7 2 1 3.2 2.8 3.2 5.3zM13 6c0-2.5-1.5-4-4-4H2v8h6.5c2.8 0 4.5-1.5 4.5-4zm-3.5 6H2v8h7.5c4 0 4.5-2.3 4.5-4 0-2.6-1.6-4-4.5-4z", fill: "#292929", fillRule: "evenodd" })
 	      );
 	    }
 	  }]);
@@ -36728,8 +36744,8 @@ webpackJsonp([0,3],[
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "svg",
-	        { className: _style2.default.icon, width: "25", height: "25", viewBox: "0 0 25 25" },
-	        _react2.default.createElement("path", { d: "M12.5 0C5.5 0 0 5.6 0 12.5 0 19.5 5.6 25 12.5 25c7 0 12.5-5.6 12.5-12.5C25 5.5 19.4 0 12.5 0zm7.7 6.5c1.2 1.5 2 3.4 2 5.5-1.4-.3-2.7-.4-4-.4-1 0-2 0-2.8.2l-.6-1.5c2-.8 3.8-2 5.4-3.8zm-7.7-3.8c2.3 0 4.4 1 6 2.2-1.2 1.4-3 2.5-4.7 3.3C12.5 5.8 11.3 4 10.4 3l2-.3zm-4.3 1c.7 1 2 2.6 3.5 5.4-3 1-6 1.2-7.7 1.2H3C3.7 7 5.7 5 8.2 3.7zm-5.5 8.8h1c2 0 5.5-.3 9-1.4l.5 1.4c-2.3.8-4 2-5.5 3.2-1.3 1.2-2 2.4-2.6 3.2-1.4-1.7-2.3-4-2.3-6.3zm9.8 9.8c-2.2 0-4.2-.8-5.8-2 .4-.5 1-1.6 2.3-2.8 1.2-1 3-2.3 5-3 .8 2 1.4 4.4 2 7-1 .5-2.3.8-3.5.8zm5.5-1.8c-.5-2.4-1-4.6-1.8-6.5l2-.2c1.2 0 2.5.2 4 .5-.6 2.6-2 4.8-4.2 6.2z", fill: "#292929", fillRule: "evenodd" })
+	        { className: _style2.default.icon, width: "32", height: "32", viewBox: "0 0 32 32" },
+	        _react2.default.createElement("path", { d: "M32 17v.2C31.3 23.6 27 29 21.3 31h-.2c-1.6.7-3.4 1-5.2 1-8.8 0-16-7.2-16-16v-2h.2C.8 8.7 4 4.3 8.2 2c.2 0 .3 0 .4-.2C10.8.8 13.3 0 16 0c4 0 7.8 1.5 10.6 4l.3.3c3 3 5 7 5 11.7v1zm-2.2 1c-3.2-.3-6 0-8.6.3.8 3 1.2 6.4 1 10.3 4-2 7-6 7.6-10.6zM16 30c1.4 0 2.8-.2 4-.6.4-4 0-7.6-.8-10.6-3 .8-5.4 2-7.2 3-2.7 1.8-4.5 3.7-5.3 4.7C9.2 28.7 12.4 30 16 30zM2 16c0 3.4 1.2 6.6 3.3 9 1.6-2 6-6.2 13.3-8.2l-1.3-3c-2.6 1.3-5.8 2-9.7 2C6 16 4 16 2 15.5v.6zm.3-2.6c6 1 10.5.2 14-1.3C13.7 7.5 10.2 5 9 4c-3.5 2-6 5.4-6.7 9.4zM16 2c-1.8 0-3.5.3-5 1 1.3 1 3.5 3 5.6 5.7L18 11c3.5-1.8 5.6-4.3 6.7-6-2.4-1.8-5.4-3-8.7-3zm10.2 4.5c-1.3 1.7-3.6 4.4-7 6.4.5 1 1 2 1.4 3.4 2.7-.5 5.8-.8 9.4-.4 0-3.7-1.5-7-3.8-9.5z", fill: "#292929", fillRule: "evenodd" })
 	      );
 	    }
 	  }]);
@@ -36919,7 +36935,18 @@ webpackJsonp([0,3],[
 	    value: function render() {
 	      var logoBack = void 0;
 
-	      if (this.props.location.pathname.indexOf('/cases/') === 0 && window.innerWidth > 700) {
+	      if (this.props.location.pathname.indexOf('/cases/') === 0 && window.innerWidth <= 700) {
+	        logoBack = _react2.default.createElement(
+	          'h1',
+	          { className: _style2.default.titleBack },
+	          _react2.default.createElement(
+	            _reactRouter.IndexLink,
+	            { to: '/', className: _style2.default.link },
+	            _react2.default.createElement(_ArrowIconLeft2.default, null),
+	            '/s'
+	          )
+	        );
+	      } else if (this.props.location.pathname.indexOf('/cases/') === 0 && window.innerWidth > 700) {
 	        logoBack = _react2.default.createElement(
 	          'h1',
 	          { className: _style2.default.titleBack },
@@ -37395,10 +37422,6 @@ webpackJsonp([0,3],[
 
 	var _caseNav2 = _interopRequireDefault(_caseNav);
 
-	var _ArrowIcon = __webpack_require__(232);
-
-	var _ArrowIcon2 = _interopRequireDefault(_ArrowIcon);
-
 	var _jquery = __webpack_require__(255);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
@@ -37458,12 +37481,7 @@ webpackJsonp([0,3],[
 	              '/shortcute is a digital design bureau that takes your project to the next level. Psst...we know the short cut.'
 	            )
 	          ),
-	          _react2.default.createElement(_caseNav2.default, { total: total }),
-	          _react2.default.createElement(
-	            'a',
-	            { className: _style2.default.arrowdown, onClick: this.clickHandler },
-	            _react2.default.createElement(_ArrowIcon2.default, null)
-	          )
+	          _react2.default.createElement(_caseNav2.default, { total: total })
 	        )
 	      );
 	    }
@@ -37479,7 +37497,7 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"logo":"style__logo___1c5a9","arrowdown":"style__arrowdown___2R-7s","content":"style__content___3BMJV","headline":"style__headline___2htGj","firstslide":"style__firstslide___3eMS6"};
+	module.exports = {"logo":"style__logo___1c5a9","content":"style__content___3BMJV","headline":"style__headline___2htGj","firstslide":"style__firstslide___3eMS6"};
 
 /***/ },
 /* 280 */,
@@ -37638,11 +37656,6 @@ webpackJsonp([0,3],[
 	              null,
 	              '/shortcute is a digital design bureau that takes your project to the next level. Psst...we know the short cut.'
 	            )
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { className: _style2.default.arrowdown, onClick: this.clickHandler },
-	            _react2.default.createElement(_ArrowIcon2.default, null)
 	          )
 	        )
 	      );
@@ -37659,7 +37672,7 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"aboutSection":"style__aboutSection___2s7Y4","content":"style__content___3laV-","headline":"style__headline___X3wi2","text":"style__text___3W01M","clients":"style__clients___Yz7N0","client":"style__client___3oI8v","contact":"style__contact___2n9dB","contactText":"style__contactText___E37Hz","btn":"style__btn___3Eeks","first":"style__first___SRXqC","logo":"style__logo___1xuci","arrowdown":"style__arrowdown___1Cln1","items":"style__items___QX79p","item":"style__item___E08N7","employees":"style__employees___25bIl","employee":"style__employee___2R_vH"};
+	module.exports = {"aboutSection":"style__aboutSection___2s7Y4","content":"style__content___3laV-","headline":"style__headline___X3wi2","text":"style__text___3W01M","clients":"style__clients___Yz7N0","client":"style__client___3oI8v","contact":"style__contact___2n9dB","contactText":"style__contactText___E37Hz","btn":"style__btn___3Eeks","first":"style__first___SRXqC","logo":"style__logo___1xuci","items":"style__items___QX79p","item":"style__item___E08N7","employees":"style__employees___25bIl","employee":"style__employee___2R_vH"};
 
 /***/ },
 /* 284 */,
@@ -37721,7 +37734,7 @@ webpackJsonp([0,3],[
 	            { className: _style2.default.text },
 	            _react2.default.createElement(
 	              'h1',
-	              null,
+	              { className: _style2.default.headline },
 	              'What we offer'
 	            ),
 	            _react2.default.createElement(
@@ -37971,7 +37984,7 @@ webpackJsonp([0,3],[
 	            { className: _style2.default.text },
 	            _react2.default.createElement(
 	              'h1',
-	              null,
+	              { className: _style2.default.headline },
 	              'How we do this'
 	            ),
 	            _react2.default.createElement(
@@ -38641,7 +38654,7 @@ webpackJsonp([0,3],[
 	            { className: _style2.default.text },
 	            _react2.default.createElement(
 	              'h1',
-	              null,
+	              { className: _style2.default.headline },
 	              'Who we work with'
 	            ),
 	            _react2.default.createElement(
@@ -38967,7 +38980,7 @@ webpackJsonp([0,3],[
 	            { className: _style2.default.text },
 	            _react2.default.createElement(
 	              "h1",
-	              null,
+	              { className: _style2.default.headline },
 	              "Who will do this"
 	            ),
 	            _react2.default.createElement(
@@ -38982,6 +38995,7 @@ webpackJsonp([0,3],[
 	            _react2.default.createElement(
 	              "div",
 	              { className: _style2.default.employee },
+	              _react2.default.createElement("img", { src: "http://placehold.it/150x150", alt: "" }),
 	              _react2.default.createElement(
 	                "strong",
 	                null,
@@ -38990,12 +39004,15 @@ webpackJsonp([0,3],[
 	              _react2.default.createElement(
 	                "p",
 	                null,
-	                "Co-founder, Product designer"
+	                "Co-founder",
+	                _react2.default.createElement("br", null),
+	                " Product designer"
 	              )
 	            ),
 	            _react2.default.createElement(
 	              "div",
 	              { className: _style2.default.employee },
+	              _react2.default.createElement("img", { src: "http://placehold.it/150x150", alt: "" }),
 	              _react2.default.createElement(
 	                "strong",
 	                null,
@@ -39004,30 +39021,19 @@ webpackJsonp([0,3],[
 	              _react2.default.createElement(
 	                "p",
 	                null,
-	                "Co-founder, Product designer"
+	                "Co-founder",
+	                _react2.default.createElement("br", null),
+	                " Product designer"
 	              )
 	            ),
 	            _react2.default.createElement(
 	              "div",
 	              { className: _style2.default.employee },
+	              _react2.default.createElement("img", { src: "http://placehold.it/150x150", alt: "" }),
 	              _react2.default.createElement(
 	                "strong",
 	                null,
 	                "Anna Hnap"
-	              ),
-	              _react2.default.createElement(
-	                "p",
-	                null,
-	                "Junior UI/UX Designer"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              { className: _style2.default.employee },
-	              _react2.default.createElement(
-	                "strong",
-	                null,
-	                "Nazar Kulikov"
 	              ),
 	              _react2.default.createElement(
 	                "p",
@@ -39153,6 +39159,10 @@ webpackJsonp([0,3],[
 
 	var _MailIcon2 = _interopRequireDefault(_MailIcon);
 
+	var _FacebookIcon = __webpack_require__(308);
+
+	var _FacebookIcon2 = _interopRequireDefault(_FacebookIcon);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -39192,7 +39202,7 @@ webpackJsonp([0,3],[
 	              ),
 	              _react2.default.createElement(
 	                'h1',
-	                null,
+	                { className: _style2.default.headline },
 	                'Contacts'
 	              ),
 	              _react2.default.createElement(
@@ -39212,6 +39222,13 @@ webpackJsonp([0,3],[
 	                { href: '', className: _style2.default.link },
 	                _react2.default.createElement(_DribbleIcon2.default, null),
 	                '@shortcute'
+	              ),
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'a',
+	                { href: '', className: _style2.default.link },
+	                _react2.default.createElement(_FacebookIcon2.default, null),
+	                '/shortcute'
 	              )
 	            )
 	          ),
@@ -39223,7 +39240,7 @@ webpackJsonp([0,3],[
 	              { className: _style2.default.text },
 	              _react2.default.createElement(
 	                'h1',
-	                null,
+	                { className: _style2.default.headline },
 	                'Drop a line'
 	              ),
 	              _react2.default.createElement(
@@ -39254,7 +39271,7 @@ webpackJsonp([0,3],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"first":"style__first___hOZqF","logo":"style__logo___1L78D","content":"style__content___3GNvE","text":"style__text___1BvNH","navigation":"style__navigation___1dHHP","link":"style__link___1zSFf","btn":"style__btn___117Tg"};
+	module.exports = {"first":"style__first___hOZqF","logo":"style__logo___1L78D","content":"style__content___3GNvE","text":"style__text___1BvNH","headline":"style__headline___RZuFZ","navigation":"style__navigation___1dHHP","link":"style__link___1zSFf","btn":"style__btn___117Tg"};
 
 /***/ },
 /* 306 */,
@@ -39309,6 +39326,59 @@ webpackJsonp([0,3],[
 	}(_react2.default.Component);
 
 	exports.default = MailIcon;
+
+/***/ },
+/* 308 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _style = __webpack_require__(233);
+
+	var _style2 = _interopRequireDefault(_style);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var FacebookIcon = function (_React$Component) {
+	  _inherits(FacebookIcon, _React$Component);
+
+	  function FacebookIcon() {
+	    _classCallCheck(this, FacebookIcon);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(FacebookIcon).apply(this, arguments));
+	  }
+
+	  _createClass(FacebookIcon, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "svg",
+	        { className: _style2.default.icon, width: "9", height: "20", viewBox: "0 0 9 20" },
+	        _react2.default.createElement("path", { d: "M9 7.4l-.4 1.8c-.2.6-.7 1-1.4 1H6V19c0 .7-.5 1.2-1.2 1.2H3c-.6 0-1.2-.5-1.2-1.2v-8.5h-.6C.5 10.3 0 9.8 0 9V7.4C0 6.6.5 6 1.2 6h.6V4.3c0-2 1.6-3.6 3.6-3.6h2.4c.4 0 .6.3.6.6v3c0 .4-.2.7-.6.7H6v1h1.8c.4 0 .7.2 1 .5 0 .2.2.5 0 1zm-3.5 0c-.4 0-.7-.4-.7-.7V4.2c0-.3.3-.6.6-.6h1.8V1.8H5.5C4 1.8 3 2.8 3 4.2v2.4c0 .2 0 .4-.2.5 0 .2-.2.3-.4.3H1.2V9h1.2c.3 0 .6.4.6.7v9h1.8v-9c0-.3.3-.6.6-.6h2l.3-1.7H5.5z", fill: "#292929", fillRule: "evenodd" })
+	      );
+	    }
+	  }]);
+
+	  return FacebookIcon;
+	}(_react2.default.Component);
+
+	exports.default = FacebookIcon;
 
 /***/ }
 ]);
