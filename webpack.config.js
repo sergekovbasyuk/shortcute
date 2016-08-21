@@ -5,15 +5,13 @@ const validate = require('webpack-validator');
 const parts = require('./libs/parts');
 
 const PATHS = {
-  app: path.join(__dirname, 'app'),
-  style: path.join(__dirname, 'app', 'main.css'),
+  app: path.join(__dirname, 'src'),
   build: path.join(__dirname, 'build'),
-  images: path.join(__dirname, 'app/img'),
+  images: path.join(__dirname, 'src/img'),
 };
 
 const common = {
   entry: {
-    style: PATHS.style,
     app: PATHS.app
   },
   output: {
@@ -26,7 +24,8 @@ const common = {
       title: '/shortcute',
       appMountId: 'app',
       inject: false,
-      mobile: true
+      mobile: true,
+      favicon: 'favicon.ico'
     })
   ],
   resolve: {
@@ -59,9 +58,9 @@ switch(process.env.npm_lifecycle_event) {
       ),
       parts.extractBundle({
         name: 'vendor',
-        entries: ['react']
+        entries: ['react', 'react-dom', 'react-scroll', 'jquery', 'fullpage.js']
       }),
-      // parts.minify(),
+      parts.minify(),
       parts.setupCSS(PATHS.app),
       parts.extractImage(PATHS.images),
       parts.babel(PATHS.app)

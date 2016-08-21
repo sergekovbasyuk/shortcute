@@ -56,7 +56,9 @@ exports.setupCSS = function(paths) {
     },
     plugins: [
       // Output extracted CSS to a file
-      new ExtractTextPlugin('[name].[chunkhash].css')
+      new ExtractTextPlugin('[name].[chunkhash].css', {
+        allChunks: true
+      })
     ],
     postcss: function () {
         return [

@@ -1,0 +1,29 @@
+.navigation {
+  display: none;
+  width: 15px;
+  position: absolute;
+  bottom: 40px;
+  left: 10%;
+  cursor: pointer;
+
+  @media (min-width: 700px) {
+    display: block;
+  }
+
+  span {
+    font-family: 'GothamPro-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;
+    right: -25px;
+  }
+
+  span:first-child{
+    top: 0;
+  }
+
+  span:last-child {
+    bottom: 0;
+  }
+}

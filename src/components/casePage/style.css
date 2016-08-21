@@ -1,0 +1,52 @@
+.arrowdown {
+  @media (min-width: 700px) {
+    display: none;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin: 0 20px;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 2.5rem;
+  }
+
+  @media (min-width: 700px) {
+    margin: 0 10% 4rem;
+
+    h3 {
+      width: 25%;
+    }
+
+    p {
+      width: 75%;
+    }
+
+    h3, p {
+      display: inline-block;
+    }
+  }
+}
+
+.featuredImage, .caseImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.caseImage {
+  margin-top: 6.25rem;
+  padding: 0 10%;
+}
