@@ -1,11 +1,18 @@
 @font-face {
-  font-family: 'Space Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Space Mono'), local('SpaceMono-Regular'), url(https://fonts.gstatic.com/s/spacemono/v1/adVweg3BJhE6r8jYmXseHQzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+	font-family: 'GothamPro-Black';
+	src: url('GothamPro-Black.eot?') format('eot'),
+	     url('GothamPro-Black.otf')  format('opentype'),
+	     url('GothamPro-Black.woff') format('woff'),
+	     url('GothamPro-Black.ttf')  format('truetype'),
+	     url('GothamPro-Black.svg#GothamPro-Black') format('svg');
 }
 
+
 @font-face {
-  font-family: 'GothamPro-Bold';
-  src: url('/css/fonts/GothamPro-Bold.eot?') format('eot'), url('/css/fonts/GothamPro-Bold.otf') format('opentype'), url('/css/fonts/GothamPro-Bold.woff') format('woff'), url('/css/fonts/GothamPro-Bold.ttf') format('truetype'), url('/css/fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg'); }
+	font-family: 'GothamPro-Bold';
+	src: url('GothamPro-Bold.eot?') format('eot'),
+	     url('GothamPro-Bold.otf')  format('opentype'),
+	     url('GothamPro-Bold.woff') format('woff'),
+	     url('GothamPro-Bold.ttf')  format('truetype'),
+	     url('GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+}

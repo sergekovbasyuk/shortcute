@@ -5,13 +5,11 @@
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
+  composes: content from '../../css/generic.css';
   align-items: baseline;
-  flex-wrap: wrap;
-  margin: 0 20px;
 
   h3 {
+    font-family: 'GothamPro-Black', sans-serif;
     font-size: 1.5rem;
     font-weight: 900;
     line-height: 1.2;
@@ -24,8 +22,6 @@
   }
 
   @media (min-width: 700px) {
-    margin: 0 10% 4rem;
-
     h3 {
       width: 25%;
     }

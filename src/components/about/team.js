@@ -12,19 +12,24 @@ class Team extends React.Component {
             </div>
             <div className={styles.employees}>
               <div className={styles.employee}>
-                <img src="http://placehold.it/150x150" alt=""/>
+                <img src="http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/Victor_xtbyd7.jpg" alt=""/>
                 <strong>Victor Samokhvalov</strong>
                 <p>Co-founder<br/> Product designer</p>
               </div>
               <div className={styles.employee}>
-                <img src="http://placehold.it/150x150" alt=""/>
+                <img src="http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/Alexander_zo0ikb.jpg" alt=""/>
                 <strong>Alexander Zhovtalyuk</strong>
                 <p>Co-founder<br/> Product designer</p>
               </div>
               <div className={styles.employee}>
-                <img src="http://placehold.it/150x150" alt=""/>
+                <img src="http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/Anna_bdap9b.jpg" alt=""/>
                 <strong>Anna Hnap</strong>
                 <p>Junior UI/UX Designer</p>
+              </div>
+              <div className={styles.employee}>
+                <img src="http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/Sergii_ka7ctd.jpg" alt=""/>
+                <strong>Serge Kovbasyuk</strong>
+                <p>Frontend developer</p>
               </div>
             </div>
           </div>

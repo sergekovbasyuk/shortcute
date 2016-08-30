@@ -1,6 +1,10 @@
 import React from 'react';
 import styles from "./style.css";
 import CaseNavigation from '../../caseNav';
+import ArrowIcon from '../../icons/ArrowIcon';
+import Scroll from 'react-scroll';
+
+var Link = Scroll.Link;
 
 class First extends React.Component {
   render() {
@@ -39,6 +43,7 @@ class First extends React.Component {
           </div>
           <div className={styles.img} style={bg}></div>
         </div>
+        <Link to='content' spy={true} smooth={true} offset={-100} duration={500} className={styles.link}><ArrowIcon /></Link>
       </div>
     );
   }

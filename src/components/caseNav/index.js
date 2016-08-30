@@ -1,11 +1,7 @@
 import React from 'react';
 import styles from "./style.css";
-import Scroll from 'react-scroll';
 import fullpage from 'fullpage.js';
 import jquery from 'jquery';
-
-var Link = Scroll.Link;
-var scroll = Scroll.animateScroll;
 
 class CaseNavigation extends React.Component {
   clickHandler(e){

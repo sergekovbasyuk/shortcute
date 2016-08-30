@@ -1,32 +1,17 @@
 .logo {
-  font-size: 100px;
-  margin-top: 0;
-  margin-bottom: 40px;
-  line-height: 1;
-
-  @media (min-width: 700px) {
-    display: none;
-  }
+  composes: logo from '../../../css/generic.css';
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 0 20px;
+  composes: content from '../../../css/generic.css';
 
   @media (min-width: 700px) {
     max-width: 540px;
-    margin: 0 10%;
   }
 }
 
 .headline {
-  font-size: 2.25rem;
-  font-weight: 900;
-  line-height: 1.2;
-  font-family: 'GothamPro-Bold', sans-serif;
+  composes: headline from '../../../css/generic.css';
 }
 
 .firstslide {

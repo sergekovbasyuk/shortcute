@@ -17,7 +17,7 @@ class First extends React.Component {
         <div className={styles.content}>
           <div className={styles.text}>
             <h1 className={styles.logo}>/s</h1>
-            <h1 className={styles.headline}>Handcrafted <br/>interfaces</h1>
+            <h1 className={styles.headline}>Handcrafted interfaces</h1>
             <p>/shortcute is a digital design bureau that takes your project to the next level. Psst...we know the short cut.</p>
           </div>
           <CaseNavigation total={total}/>

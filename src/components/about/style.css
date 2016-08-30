@@ -3,23 +3,13 @@
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 0 20px;
-
-  @media (min-width: 700px) {
-    margin: 0 10%;
-  }
+  composes: content from '../../css/generic.css';
 }
 
 .headline {
+  composes: headline from '../../css/generic.css';
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
-  font-size: 2.25rem;
-  font-weight: 900;
-	line-height: 1.2;
 }
 
 .text {
@@ -28,6 +18,7 @@
   max-width: 540px;
 
   h2 {
+    font-family: 'GothamPro-Black', sans-serif;
     font-size: 24px;
     margin: 0;
   }
@@ -56,6 +47,10 @@
     margin-bottom: 0;
   }
 
+  strong {
+    font-family: 'GothamPro-Black', sans-serif;
+  }
+
   svg {
     height: 62px;
     margin-bottom: 3rem;
@@ -71,6 +66,7 @@
   width: 100%;
 
   h1 {
+    font-family: 'GothamPro-Black', sans-serif;
     margin-bottom: 1.3rem;
   }
 
@@ -80,44 +76,7 @@
 }
 
 .btn {
-  display: inline-block;
-  box-shadow: inset 2px 2px 0px 0px #292929, inset -2px -3px 0px 0px #292929;
-  font-size: 1rem;
-  letter-spacing: 0px;
-  width: 13rem;
-  padding: 17px 0;
-  font-family: 'GothamPro-Bold', sans-serif;
-  font-weight: 700;
-  backface-visibility: hidden;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-
-  &:before, &:after {
-    pointer-events: none;
-  }
-
-  &:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: #292929;
-    content: '';
-    transition: transform .3s;
-    transform: translateY(95%);
-  }
-
-  &:hover {
-    color: #fff;
-    opacity: 1;
-  }
-
-  &:hover:before {
-    transform: translateY(0);
-  }
+  composes: btn from '../../css/generic.css';
 }
 
 .first {
@@ -138,12 +97,7 @@
 }
 
 .logo {
-  font-size: 100px;
-  margin: 0;
-
-  @media (min-width: 700px) {
-    display: none;
-  }
+  composes: logo from '../../css/generic.css';
 }
 
 .items {
@@ -168,6 +122,7 @@
 
   h2 {
     font-size: 24px;
+    font-family: 'GothamPro-Black', sans-serif;
   }
 
   svg {
@@ -231,6 +186,7 @@
   strong {
     letter-spacing: 0px;
     line-height: 3.3;
+    font-family: 'GothamPro-Black', sans-serif;
   }
 
   p {

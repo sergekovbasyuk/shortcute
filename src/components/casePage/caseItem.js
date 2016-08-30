@@ -4,6 +4,9 @@ import ArrowIcon from '../icons/ArrowIcon';
 import First from './first';
 import NextProject from './nextProject';
 import Footer from '../footer';
+import Scroll from 'react-scroll';
+
+var Element = Scroll.Element;
 
 class CaseItem extends React.Component {
   render() {
@@ -40,7 +43,7 @@ class CaseItem extends React.Component {
     return (
       <div className={styles.case}>
         <First title={title} description={description} imgSmall={imgSmall} imgMiddle={imgMiddle} imgLarge={imgLarge}/>
-        <div className={styles.content}>
+        <Element name='content' className={styles.content}>
           <h3>Background</h3>
           <p>{background}</p>
           <h3>Task</h3>
@@ -48,7 +51,7 @@ class CaseItem extends React.Component {
           <h3>Deliverables</h3>
           <p>{deliverables}</p>
           <hr></hr>
-        </div>
+        </Element>
         <div>
           <img className={styles.featuredImage} src={imgFeatured}></img>
           <img className={styles.caseImage} src={imgCase}></img>

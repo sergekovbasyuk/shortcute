@@ -1,6 +1,7 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import "./jquery.fullPage.css";
 @import "./fonts.css";
+@import 'https://fonts.googleapis.com/css?family=Space+Mono';
 
 body {
     color: #292929;
@@ -9,7 +10,7 @@ body {
     text-rendering: geometricPrecision;
     font-size: responsive;
     min-font-size: 12px;
-    max-font-size: 21px;
+    max-font-size: 16px;
     lower-font-range: 420px;
     upper-font-range: 1920px;
     box-sizing: border-box;
@@ -38,9 +39,9 @@ a {
 }
 
 p {
-  font-family: 'Space Mono';
+  font-family: 'Space Mono', monospace;
   letter-spacing: 0px;
-  line-height: 22px;
+  line-height: 1.6;
   color: #333747;
   opacity: .8;
   margin: 0;

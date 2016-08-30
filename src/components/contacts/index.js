@@ -27,15 +27,13 @@ class Contacts extends React.Component {
                 <FacebookIcon />/shortcute
               </a>
             </div>
-          </div>
-          <div className={styles.content}>
             <div className={styles.text}>
               <h1 className={styles.headline}>Drop a line</h1>
               <p>When people over profits.</p>
+              <a href='mailto:hi@shortcute.xyz' className={styles.link}>
+                <MailIcon />hi@shortcute.xyz
+              </a>
             </div>
-            <a href='mailto:hi@shortcute.xyz' className={styles.link}>
-              <MailIcon />hi@shortcute.xyz
-            </a>
           </div>
         </div>
       </div>

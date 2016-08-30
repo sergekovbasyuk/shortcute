@@ -2,7 +2,7 @@ import React from 'react';
 
 let CasesList = [
   {
-    imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/pinstants_sm.jpg',
+    imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/1_Pinstans_nzbjzw.jpg',
     imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/pinstants_md.jpg',
     imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/pinstants_lg.jpg',
     imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471284701/shortcute/pinstants/mockups.jpg',
@@ -14,7 +14,7 @@ let CasesList = [
     deliverables: 'Check this awesome 545 PSD’s , Buddy'
   },
   {
-    imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/smoliar_sm.jpg',
+    imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544736/2_Smoliar_sxwd6k.jpg',
     imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/smoliar_md.jpg',
     imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/smoliar_lg.jpg',
     imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419529/shortcute/smoliar/mockups.jpg',
@@ -26,7 +26,7 @@ let CasesList = [
     deliverables: 'The website is visual-content-centered with its full width bg stylish photos, videos of backstage and generally made in dark colors flavored with faded-gold h1 font. The main page is designed like a slide show, information appears on cards, which replace one another with some animation when user scrolling.'
   },
   {
-    imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/minuteoflife_sm.jpg',
+    imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544738/3_Minute_Of_Life_a0sina.jpg',
     imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/minuteoflife_md.jpg',
     imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/minuteoflife_lg.jpg',
     imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471515055/shortcute/minutesoflife/mockups.jpg',
@@ -38,7 +38,7 @@ let CasesList = [
     deliverables: 'Obvious navigation and info hierarchy, big comfortable and easy-to-notice buttons, extremely familiar social features section includes feed, messaging etc, pretty blue backgrounds — all this make UI friendly af.'
   },
   {
-    imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283689/shortcute/silver_sm.jpg',
+    imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544736/4_Dubai_lzaozt.jpg',
     imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/silver_md.jpg',
     imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283692/shortcute/silver_lg.jpg',
     imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419315/shortcute/dubai/mockups.jpg',
@@ -50,7 +50,7 @@ let CasesList = [
     deliverables: 'Simple navigation, rich filtering abilities and useful venue info makes this app necessary for Dubai visitors as well as for locals. Designed in Sketch app.'
   },
   {
-    imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/kuan_sm.jpg',
+    imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544736/5_Kuan_tueq4d.jpg',
     imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/kuan_md.jpg',
     imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/kuan_lg.jpg',
     imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419383/shortcute/kuan/mockups.jpg',
@@ -62,7 +62,7 @@ let CasesList = [
     deliverables: 'Modern business&tech style designs with an extensive set of internal pages and a dashboard. Since the website supposed to provide lots of data tables and long-reads, it’s equipped with nice and comfortable to use font set that allows user easy to navigate and detect the desired information among its abundance.'
   },
   {
-    imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/sammyicon_sm.jpg',
+    imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544736/6_Sammy_Icon_s8shpa.jpg',
     imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/sammyicon_md.jpg',
     imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/sammyicon_lg.jpg',
     imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419465/shortcute/sammyicon/mockups.jpg',

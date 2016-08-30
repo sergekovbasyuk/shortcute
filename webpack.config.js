@@ -20,7 +20,7 @@ const common = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: require('html-webpack-template'),
+      template: 'template.ejs',
       title: '/shortcute',
       appMountId: 'app',
       inject: false,
