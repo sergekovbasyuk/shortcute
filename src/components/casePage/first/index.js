@@ -43,7 +43,7 @@ class First extends React.Component {
           </div>
           <div className={styles.img} style={bg}></div>
         </div>
-        <Link to='content' spy={true} smooth={true} offset={-100} duration={500} className={styles.link}><ArrowIcon /></Link>
+        <Link to='content' spy={true} smooth={true} offset={-20} duration={500} className={styles.link}><ArrowIcon /></Link>
       </div>
     );
   }

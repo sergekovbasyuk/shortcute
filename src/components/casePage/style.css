@@ -7,6 +7,7 @@
 .content {
   composes: content from '../../css/generic.css';
   align-items: baseline;
+  padding-top: 5rem;
 
   h3 {
     font-family: 'GothamPro-Black', sans-serif;
