@@ -15,8 +15,8 @@ let CasesList = [
   },
   {
     imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544736/2_Smoliar_sxwd6k.jpg',
-    imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/smoliar_md.jpg',
-    imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/smoliar_lg.jpg',
+    imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1472640066/smoliar_md_te5prf.jpg',
+    imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1472640066/smoliar_lg_chipbb.jpg',
     imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419529/shortcute/smoliar/mockups.jpg',
     imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419530/shortcute/smoliar/shots.jpg',
     title: 'Alexei Smoliar',
@@ -51,8 +51,8 @@ let CasesList = [
   },
   {
     imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544736/5_Kuan_tueq4d.jpg',
-    imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/kuan_md.jpg',
-    imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/kuan_lg.jpg',
+    imgMiddle: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1472640065/kuan_md_xdijkl.jpg',
+    imgLarge: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1472640064/kuan_lg_ggkmrb.jpg',
     imgFeatured: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419383/shortcute/kuan/mockups.jpg',
     imgCase: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1471419384/shortcute/kuan/shots.jpg',
     title: 'Kuan',
