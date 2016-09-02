@@ -1,7 +1,7 @@
 .footer {
   text-align: center;
   padding: 80px 0 67px;
-  font-family: 'Space Mono';
+  font-family: 'Space Mono', sans-serif;
 }
 
 .mailLink {
