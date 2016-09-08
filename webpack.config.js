@@ -7,7 +7,7 @@ const parts = require('./libs/parts');
 const PATHS = {
   app: path.join(__dirname, 'src'),
   build: path.join(__dirname, 'build'),
-  images: path.join(__dirname, 'src/img'),
+  images: path.join(__dirname, 'src/img')
 };
 
 const common = {

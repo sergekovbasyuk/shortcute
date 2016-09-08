@@ -1,7 +1,6 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import "./jquery.fullPage.css";
-@import "./fonts.css";
-@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans';
 
 body {
     color: #292929;
