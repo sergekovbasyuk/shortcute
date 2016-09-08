@@ -4,11 +4,6 @@ import CaseNavigation from '../../caseNav';
 import jquery from 'jquery';
 
 class First extends React.Component {
-  clickHandler(e){
-    e.preventDefault();
-    jquery.fn.fullpage.moveSectionDown();
-  }
-
   render() {
     const total = this.props.total;
 
