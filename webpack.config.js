@@ -25,7 +25,11 @@ const common = {
       appMountId: 'app',
       inject: false,
       mobile: true,
-      favicon: 'favicon.ico'
+      favicon: 'favicon.ico',
+      googleAnalytics: {
+        trackingId: 'UA-83871767-1',
+        pageViewOnLoad: true
+      },
     })
   ],
   resolve: {
