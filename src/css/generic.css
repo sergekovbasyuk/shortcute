@@ -74,17 +74,9 @@
   font-weight: 800;
 	line-height: 1.2;
   font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0;
 
   @media (min-width: 700px) {
     font-size: 2.625rem;
-  }
-}
-
-.logo {
-  font-size: 100px;
-  margin: 0;
-
-  @media (min-width: 700px) {
-    display: none;
   }
 }
