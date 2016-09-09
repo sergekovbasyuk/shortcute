@@ -1,5 +1,7 @@
-.logo {
-  composes: logo from '../../../css/generic.css';
+.logoSmall {
+  @media (min-width: 700px) {
+    display: none;
+  }
 }
 
 .content {
