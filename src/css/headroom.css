@@ -1,10 +1,11 @@
 :global .headroom {
     will-change: transform;
-    transition: transform 200ms linear;
 }
 :global .headroom--pinned {
     transform: translateY(0%);
+    transition: transform 400ms;
 }
 :global .headroom--unpinned {
     transform: translateY(-100%);
+    transition: transform 400ms;
 }

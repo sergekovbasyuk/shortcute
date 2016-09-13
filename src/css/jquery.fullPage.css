@@ -30,6 +30,7 @@
     -moz-box-sizing: border-box; /* <=28 */
     box-sizing: border-box;
 }
+
 :global .fp-slide {
     float: left;
 }
