@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from "./style.css";
 import CaseNavigation from '../../caseNav';
-import jquery from 'jquery';
 import LogoSmall from '../../icons/LogoSmall';
 
 class First extends React.Component {

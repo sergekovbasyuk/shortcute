@@ -2,9 +2,11 @@
   display: none;
   width: 15px;
   position: absolute;
+  /*position: fixed;*/
   bottom: 40px;
   left: 10%;
   cursor: pointer;
+  z-index: 12;
 
   @media (min-width: 700px) {
     display: block;
@@ -14,6 +16,18 @@
     left: 250px;
   }
 
+  a {
+    position: relative;
+
+    &:hover {
+      opacity: 1;
+
+      span {
+        opacity: .7;
+      }
+    }
+  }
+
   span {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -21,13 +35,12 @@
     display: inline-block;
     position: absolute;
     right: -25px;
+    transition: opacity .3s;
   }
+}
 
-  span:first-child{
-    top: 0;
-  }
-
-  span:last-child {
-    bottom: 0;
-  }
+.line {
+  margin-left: 5.5px;
+  margin-top: -5px;
+  margin-bottom: -5px;
 }

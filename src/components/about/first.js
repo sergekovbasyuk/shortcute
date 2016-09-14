@@ -4,10 +4,6 @@ import ArrowIcon from '../icons/ArrowIcon';
 import LogoSmall from '../icons/LogoSmall';
 
 class First extends React.Component {
-  clickHandler(e){
-    e.preventDefault();
-
-  }
   render() {
     return (
         <div className={styles.first}>
