@@ -53,8 +53,8 @@ class CaseItem extends React.Component {
           <hr></hr>
         </Element>
         <div>
-          <img className={styles.featuredImage} src={imgFeatured}></img>
-          <img className={styles.caseImage} src={imgCase}></img>
+          <img sizes='100%' className={styles.featuredImage} src={imgFeatured}></img>
+          <img sizes='100%' className={styles.caseImage} src={imgCase}></img>
         </div>
         <NextProject nextProjectTitle={nextProjectTitle} nextProjectDescription={nextProjectDescription} nextLinkId={nextId}/>
         <Footer />
