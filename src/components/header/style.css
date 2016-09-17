@@ -54,11 +54,12 @@
 }
 
 .nav {
-  text-align: center;
+  text-align: right;
   font-size: .9375rem;
   text-transform: lowercase;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+  flex: 1;
 }
 
 .titleBack {
@@ -116,4 +117,8 @@
     height: 24px;
   }
 
+}
+
+.titleContainer {
+  /*flex: 1;*/
 }

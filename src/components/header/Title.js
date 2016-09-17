@@ -42,7 +42,7 @@ class Title extends React.Component {
     }
 
     return (
-      <div>
+      <div className={styles.titleContainer}>
         {logoBack}
       </div>
     );
