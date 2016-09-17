@@ -4,7 +4,6 @@ import First from './first';
 import Footer from '../footer';
 import fullpage from 'fullpage.js';
 import jquery from 'jquery';
-// import CaseNavigation from '../caseNav';
 
 class Cases extends React.Component {
     componentDidMount() {
@@ -27,15 +26,12 @@ class Cases extends React.Component {
     });
 
     return (
-      <div>
-        <div id='fullpage' className='cases'>
-          <First total={totalCases}/>
-          {itemTemplate}
-          <div className='section fp-auto-height'>
-            <Footer />
-          </div>
+      <div id='fullpage' className='cases'>
+        <First total={totalCases}/>
+        {itemTemplate}
+        <div className='section fp-auto-height'>
+          <Footer />
         </div>
-        {/* <CaseNavigation total={totalCases}/> */}
       </div>
     );
   }
