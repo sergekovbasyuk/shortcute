@@ -24,7 +24,7 @@ class Team extends React.Component {
               <div className={styles.employee}>
                 <img src="http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/Anna_bdap9b.jpg" alt=""/>
                 <strong>Anna Hnap</strong>
-                <p>Junior UI/UX Designer</p>
+                <p>Product designer</p>
               </div>
               <div className={styles.employee}>
                 <img src="http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/Sergii_ka7ctd.jpg" alt=""/>
