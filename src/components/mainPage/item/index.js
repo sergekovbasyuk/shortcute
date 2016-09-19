@@ -3,6 +3,7 @@ import styles from "./style.css";
 import CaseNavigation from '../../caseNav';
 import { Link } from 'react-router';
 
+
 class Item extends React.Component {
   render() {
     const
@@ -33,7 +34,7 @@ class Item extends React.Component {
     }
 
     return (
-      <div className={'section ' + styles.case} >
+      <div className={'section'} >
         <div className={styles.content}>
           <div className={styles.text}>
             <h1 className={styles.headline}>{title}</h1>

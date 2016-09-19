@@ -5,10 +5,8 @@ import styles from "./style.css";
 import Headroom from 'headroom.js';
 
 class Header extends React.Component {
-  scrollHandler(e){
-    var header = document.querySelector('header');
-    
-    var headroom = new Headroom(header,{
+  scrollHandler(element){
+    var headroom = new Headroom(element,{
       "offset": 205,
       "tolerance": 5,
       "classes": {
@@ -22,13 +20,15 @@ class Header extends React.Component {
   }
 
   componentDidMount(){
-    window.addEventListener('scroll', this.scrollHandler);
+    const myHeader = this.refs.myHeader;
+
+    window.addEventListener('scroll', this.scrollHandler(myHeader));
   }
 
   render() {
     return (
-      <header className={styles.header}>
-        <Title location={this.props.location} title='/shortcute'/>
+      <header className={styles.header} ref='myHeader'>
+        <Title location={this.props.location}/>
         <Nav />
       </header>
     );

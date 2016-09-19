@@ -10,19 +10,20 @@ var Element = Scroll.Element;
 
 class CaseItem extends React.Component {
   render() {
-    const
-      id = this.props.id,
-      title = this.props.data[id].title,
-      description = this.props.data[id].description,
-      background = this.props.data[id].background,
-      task = this.props.data[id].task,
-      deliverables = this.props.data[id].deliverables,
-      imgSmall = this.props.data[id].imgSmall,
-      imgMiddle = this.props.data[id].imgMiddle,
-      imgLarge = this.props.data[id].imgLarge,
-      imgFeatured = this.props.data[id].imgFeatured,
-      imgCase = this.props.data[id].imgCase,
-      total = this.props.data.length - 1;
+    const id = this.props.id,
+    {
+      title,
+      description,
+      background,
+      task,
+      deliverables,
+      imgSmall,
+      imgMiddle,
+      imgLarge,
+      imgFeatured,
+      imgCase
+    } = this.props.data[id],
+    total = this.props.data.length - 1;
 
     let
       nextId,
@@ -35,7 +36,7 @@ class CaseItem extends React.Component {
         nextProjectDescription = this.props.data[nextId].description;
       }
       else{
-        nextId = parseInt(id) + 1;
+        nextId = parseInt(id, 10) + 1;
         nextProjectTitle = this.props.data[nextId].title;
         nextProjectDescription = this.props.data[nextId].description;
       }
