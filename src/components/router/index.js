@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import Case from '../casePage';
 import Layout from '../layout';
 import About from "../about";
@@ -10,7 +10,7 @@ import NotFound from '../NotFound';
 export default React.createClass({
  render() {
    return (
-      <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
+      <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
         <Route path='/' component={Layout}>
           <IndexRoute component={Main}></IndexRoute>
           <Route path='cases/:id' component={Case}></Route>
