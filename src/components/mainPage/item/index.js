@@ -7,13 +7,13 @@ import { Link } from 'react-router';
 class Item extends React.Component {
   render() {
     const
-      title = this.props.data.title,
-      description = this.props.data.description,
-      number = this.props.number,
-      imgSmall = this.props.data.imgSmall,
-      imgMiddle = this.props.data.imgMiddle,
-      imgLarge = this.props.data.imgLarge,
-      total = this.props.total;
+      {title,
+      description,
+      imgSmall,
+      imgMiddle,
+      imgLarge} = this.props.data,
+      {number,
+      total} = this.props;
 
     var bg;
 
