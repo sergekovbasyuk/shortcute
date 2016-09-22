@@ -1,3 +1,5 @@
 
 build/
 src/img/
+node_modules/
+npm-debug.log

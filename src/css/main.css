@@ -53,3 +53,7 @@ p {
   flex-direction: column;
   justify-content: center;
 }
+
+:global .is-hidden {
+  transform: translateY(-100%);
+}
