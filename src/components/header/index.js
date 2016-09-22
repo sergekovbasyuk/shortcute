@@ -1,38 +1,43 @@
 import React from 'react';
 import Title from './Title';
 import Nav from './Nav';
-import styles from "./style.css";
-import Headroom from 'headroom.js';
+import styles from './style.css';
 
-class Header extends React.Component {
-  scrollHandler(element){
-    var headroom = new Headroom(element,{
-      "offset": 205,
-      "tolerance": 5,
-      "classes": {
-        "initial": "headroom",
-        "pinned": "headroom--pinned",
-        "unpinned": "headroom--unpinned"
-      }
-    });
+var lastScroll = 0;
 
-    headroom.init();
-  }
+let Header = React.createClass({
+  getInitialState() {
+    return {
+      isHidden: false
+    };
+  },
 
-  componentDidMount(){
-    const myHeader = this.refs.myHeader;
+  scrollHandler() {
+    const st = window.pageYOffset || document.documentElement.scrollTop;
 
-    window.addEventListener('scroll', this.scrollHandler(myHeader));
-  }
+    const newState = {
+      isHidden: st > lastScroll
+    };
+    this.setState(newState);
+    lastScroll = st;
+  },
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.scrollHandler);
+  },
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.scrollHandler);
+  },
 
   render() {
     return (
-      <header className={styles.header} ref='myHeader'>
+      <header className={styles.header + (this.state.isHidden ? ' is-hidden' : '')} ref='myHeader'>
         <Title location={this.props.location}/>
         <Nav />
       </header>
     );
   }
-}
+});
 
 export default Header;

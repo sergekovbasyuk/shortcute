@@ -56,4 +56,5 @@ p {
 
 :global .is-hidden {
   transform: translateY(-100%);
+  transition: transform .7s;
 }
