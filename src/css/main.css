@@ -4,16 +4,16 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:700,800';
 
 body {
-    color: #292929;
-    letter-spacing: .1em;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: geometricPrecision;
-    font-size: responsive;
-    min-font-size: 12px;
-    max-font-size: 16px;
-    lower-font-range: 420px;
-    upper-font-range: 1920px;
-    box-sizing: border-box;
+  color: #292929;
+  letter-spacing: .1em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  font-size: responsive;
+  min-font-size: 12px;
+  max-font-size: 16px;
+  lower-font-range: 420px;
+  upper-font-range: 1920px;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {

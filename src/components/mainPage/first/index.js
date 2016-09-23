@@ -2,8 +2,16 @@ import React from 'react';
 import styles from "./style.css";
 import CaseNavigation from '../../caseNav';
 import LogoSmall from '../../icons/LogoSmall';
+import ArrowIcon from '../../icons/ArrowIcon';
+import fullpage from 'fullpage.js';
+import jquery from 'jquery';
 
 class First extends React.Component {
+  clickDown(e){
+    e.preventDefault();
+    jquery.fn.fullpage.moveSectionDown();
+  }
+
   render() {
     const total = this.props.total;
 
@@ -17,6 +25,7 @@ class First extends React.Component {
           </div>
           <CaseNavigation total={total}/>
         </div>
+        <a href="#" onClick={this.clickDown} className={styles.link}><ArrowIcon /></a>
       </div>
     );
   }

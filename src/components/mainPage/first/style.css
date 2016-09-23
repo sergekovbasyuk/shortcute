@@ -14,6 +14,8 @@
 
 .headline {
   composes: headline from '../../../css/generic.css';
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .firstslide {
@@ -22,5 +24,18 @@
   @media (min-width: 700px){
     padding: 10rem 0 20rem;
     margin-bottom: -10rem;
+  }
+}
+
+.link {
+  display: block;
+  width: 15px;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  cursor: pointer;
+
+  @media (min-width: 700px) {
+    display: none;
   }
 }

@@ -34,7 +34,7 @@ class Item extends React.Component {
     }
 
     return (
-      <div className={'section'} >
+      <div className='section'>
         <div className={styles.content}>
           <div className={styles.text}>
             <h1 className={styles.headline}>{title}</h1>
