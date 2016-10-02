@@ -1,52 +1,52 @@
 import React from 'react';
-import styles from "./style.css";
-import CaseNavigation from '../../caseNav';
-import ArrowIcon from '../../icons/ArrowIcon';
 import Scroll from 'react-scroll';
+import styles from './style.css';
+import ArrowIcon from '../../icons/ArrowIcon';
 
-var Link = Scroll.Link;
+const Link = Scroll.Link;
 
-class First extends React.Component {
-  render() {
-    const
-      title = this.props.title,
-      description = this.props.description,
-      imgSmall = this.props.imgSmall,
-      imgMiddle = this.props.imgMiddle,
-      imgLarge = this.props.imgLarge,
-      total = this.props.total;
+const First = ({ title, description, imgSmall, imgMiddle, imgLarge }) => {
+  let bg;
 
-    var bg;
-
-    if(window.innerWidth > 1440){
-      bg = {
-        backgroundImage: 'url(' + imgLarge +')'
-      };
-    }
-    else if(window.innerWidth > 600){
-      bg = {
-        backgroundImage: 'url(' + imgMiddle +')'
-      };
-    }
-    else {
-      bg = {
-        backgroundImage: 'url(' + imgSmall +')'
-      };
-    }
-
-    return (
-      <div className={'section ' + styles.firstslide}>
-        <div className={styles.content}>
-          <div className={styles.text}>
-            <h1 className={styles.headline}>{title}</h1>
-            <p>{description}</p>
-          </div>
-          <div className={styles.img} style={bg}></div>
-        </div>
-        <Link to='content' spy smooth offset={-20} duration={500} className={styles.link}><ArrowIcon /></Link>
-      </div>
-    );
+  if (window.innerWidth > 1440) {
+    bg = {
+      backgroundImage: 'url(' + imgLarge + ')',
+    };
+  } else if (window.innerWidth > 600) {
+    bg = {
+      backgroundImage: 'url(' + imgMiddle + ')',
+    };
+  } else {
+    bg = {
+      backgroundImage: 'url(' + imgSmall + ')',
+    };
   }
-}
+
+  return (
+    <div className={'section ' + styles.firstslide}>
+      <div className={styles.content}>
+        <div className={styles.text}>
+          <h1 className={styles.headline}>{title}</h1>
+          <p>{description}</p>
+        </div>
+        <div className={styles.img} style={bg} />
+      </div>
+      <Link
+        to="content" spy smooth offset={-20}
+        duration={500} className={styles.link}
+      ><ArrowIcon />
+      </Link>
+    </div>
+  );
+};
+
+
+First.propTypes = {
+  title: React.PropTypes.string,
+  description: React.PropTypes.string,
+  imgSmall: React.PropTypes.string,
+  imgMiddle: React.PropTypes.string,
+  imgLarge: React.PropTypes.string,
+};
 
 export default First;

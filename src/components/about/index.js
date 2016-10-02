@@ -8,20 +8,16 @@ import Contact from './contact';
 import Footer from '../footer';
 
 
-class About extends React.Component {
-  render() {
-    return (
-      <div className='container'>
-        <First />
-        <What />
-        <How />
-        <Clients />
-        <Team />
-        <Contact />
-        <Footer />
-      </div>
-    );
-  }
-}
+const About = () => (
+  <div className="container">
+    <First />
+    <What />
+    <How />
+    <Clients />
+    <Team />
+    <Contact />
+    <Footer />
+  </div>
+);
 
 export default About;

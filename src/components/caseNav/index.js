@@ -1,20 +1,20 @@
 import React from 'react';
-import styles from "./style.css";
-import fullpage from 'fullpage.js';
+import 'fullpage.js';
 import jquery from 'jquery';
+import styles from './style.css';
 
 class CaseNavigation extends React.Component {
-  clickDown(e){
+  clickDown(e) {
     e.preventDefault();
     jquery.fn.fullpage.moveSectionDown();
   }
 
-  clickUp(e){
+  clickUp(e) {
     e.preventDefault();
     jquery.fn.fullpage.moveSectionUp();
   }
 
-  lastItemClickHandler(e){
+  lastItemClickHandler(e) {
     e.preventDefault();
     jquery.fn.fullpage.moveTo(1);
   }
@@ -25,39 +25,44 @@ class CaseNavigation extends React.Component {
     let target;
 
     let clickDown = this.clickDown;
-    let clickUp = this.clickUp;
+    const clickUp = this.clickUp;
 
-    if(this.props.number) {
+    if (this.props.number) {
       currentNumber = '0' + this.props.number;
 
-      if(this.props.number == this.props.total){
+      if (this.props.number === this.props.total) {
         target = 'firstslide';
         totalCases = 'UP';
         clickDown = this.lastItemClickHandler;
-      }
-      else{
+      } else {
         target = 'case' + (this.props.number + 1);
       }
-    }
-    else {
+    } else {
       currentNumber = '00';
       target = 'case1';
     }
 
     return (
       <div className={styles.navigation}>
-        <a onClick={clickUp}>
+        <a href="" onClick={clickUp}>
           <svg width="14" height="14" viewBox="0 0 14 14">
-            <rect transform="rotate(45 8.707 6.293)" x="3" y="3" width="10" height="10" rx="1" fill="#292929" fillRule="evenodd"/>
+            <rect
+              transform="rotate(45 8.707 6.293)" x="3" y="3"
+              width="10" height="10" rx="1" fill="#292929" fillRule="evenodd"
+            />
           </svg>
           <span>{currentNumber}</span>
         </a>
         <svg className={styles.line} width="2" height="25" viewBox="0 0 2 25">
-          <path d="M0 0h2v25H0z" fill="#292929" fillRule="evenodd"/>
+          <path d="M0 0h2v25H0z" fill="#292929" fillRule="evenodd" />
         </svg>
-        <a onClick={clickDown}>
+        <a href="" onClick={clickDown}>
           <svg width="14" height="14" viewBox="0 0 14 14">
-            <rect transform="rotate(45 8.707 6.293)" x="4" y="4" width="8" height="8" rx="1" stroke="#292929" strokeWidth="2" fill="#fff" fillRule="evenodd"/>
+            <rect
+              transform="rotate(45 8.707 6.293)" x="4" y="4"
+              width="8" height="8" rx="1" stroke="#292929" strokeWidth="2"
+              fill="#fff" fillRule="evenodd"
+            />
           </svg>
           <span>{totalCases}</span>
         </a>
@@ -65,5 +70,10 @@ class CaseNavigation extends React.Component {
     );
   }
 }
+
+CaseNavigation.propTypes = {
+  total: React.PropTypes.number.isRequired,
+  number: React.PropTypes.number,
+};
 
 export default CaseNavigation;

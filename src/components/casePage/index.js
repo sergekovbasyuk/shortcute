@@ -1,22 +1,26 @@
 import React from 'react';
 import CasesList from '../../CasesList';
-import CaseItem from './caseitem.js';
+import CaseItem from './caseItem';
 
 class CaseContainer extends React.Component {
   constructor() {
     super();
     this.state = {
-      cases: CasesList
+      cases: CasesList,
     };
   }
 
-  render(){
+  render() {
     return (
-      <div className='container'>
-        <CaseItem data={this.state.cases} id={this.props.params.id}/>
+      <div className="container">
+        <CaseItem data={this.state.cases} id={this.props.params.id} />
       </div>
     );
   }
 }
+
+CaseContainer.propTypes = {
+  params: React.PropTypes.object,
+};
 
 export default CaseContainer;

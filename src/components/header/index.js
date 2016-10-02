@@ -3,23 +3,13 @@ import Title from './Title';
 import Nav from './Nav';
 import styles from './style.css';
 
-var lastScroll = 0;
+let lastScroll = 0;
 
-let Header = React.createClass({
+const Header = React.createClass({
   getInitialState() {
     return {
-      isHidden: false
+      isHidden: false,
     };
-  },
-
-  scrollHandler() {
-    const st = window.pageYOffset || document.documentElement.scrollTop;
-
-    const newState = {
-      isHidden: st > lastScroll
-    };
-    this.setState(newState);
-    lastScroll = st;
   },
 
   componentDidMount() {
@@ -30,14 +20,28 @@ let Header = React.createClass({
     window.removeEventListener('scroll', this.scrollHandler);
   },
 
+  scrollHandler() {
+    const st = window.pageYOffset || document.documentElement.scrollTop;
+
+    const newState = {
+      isHidden: st > lastScroll,
+    };
+    this.setState(newState);
+    lastScroll = st;
+  },
+
   render() {
     return (
-      <header className={styles.header + (this.state.isHidden ? ' is-hidden' : '')} ref='myHeader'>
-        <Title location={this.props.location}/>
+      <header className={styles.header + (this.state.isHidden ? ' is-hidden' : '')} ref="myHeader">
+        <Title location={this.props.location} />
         <Nav />
       </header>
     );
-  }
+  },
 });
+
+Header.propTypes = {
+  location: React.PropTypes.object.isRequired,
+};
 
 export default Header;

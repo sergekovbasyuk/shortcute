@@ -1,7 +1,5 @@
 import React from 'react';
 
-import styles from "./style.css";
-
 class LogoSmall extends React.Component {
   render() {
     return (
