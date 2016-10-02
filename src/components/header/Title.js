@@ -47,4 +47,8 @@ class Title extends React.Component {
   }
 }
 
+Title.propTypes = {
+  location: React.PropTypes.object.isRequired,
+};
+
 export default Title;

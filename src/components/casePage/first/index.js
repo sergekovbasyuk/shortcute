@@ -10,20 +10,20 @@ const First = ({ title, description, imgSmall, imgMiddle, imgLarge }) => {
 
   if (window.innerWidth > 1440) {
     bg = {
-      backgroundImage: 'url(' + imgLarge + ')',
+      backgroundImage: `url(${imgLarge})`,
     };
   } else if (window.innerWidth > 600) {
     bg = {
-      backgroundImage: 'url(' + imgMiddle + ')',
+      backgroundImage: `url(${imgMiddle})`,
     };
   } else {
     bg = {
-      backgroundImage: 'url(' + imgSmall + ')',
+      backgroundImage: `url(${imgSmall})`,
     };
   }
 
   return (
-    <div className={'section ' + styles.firstslide}>
+    <div className={`section ${styles.firstslide}`}>
       <div className={styles.content}>
         <div className={styles.text}>
           <h1 className={styles.headline}>{title}</h1>

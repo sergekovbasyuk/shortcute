@@ -10,7 +10,7 @@ const NextProject = ({ nextProjectTitle, nextProjectDescription, nextLinkId }) =
         <h1>{nextProjectTitle}</h1>
         <p>{nextProjectDescription}</p>
         <Link
-          to={'/cases/' + nextLinkId}
+          to={`/cases/${nextLinkId}`}
           className={styles.btn}
         >view case
         </Link>

@@ -17,7 +17,7 @@ class First extends React.Component {
     const total = this.props.total;
 
     return (
-      <div className={'section fp-auto-height ' + styles.firstslide}>
+      <div className={`section fp-auto-height ${styles.firstslide}`}>
         <div className={styles.content}>
           <div className={styles.text}>
             <LogoSmall width="110" height="95" class={styles.logoSmall} />

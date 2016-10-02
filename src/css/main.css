@@ -52,6 +52,12 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 100vh;
+  border-bottom: 1px solid rgba(#000, 0.02);
+
+  &.fp-auto-height {
+    min-height: auto;
+  }
 }
 
 :global .is-hidden {

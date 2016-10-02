@@ -17,15 +17,15 @@ class Item extends React.Component {
 
     if (window.innerWidth > 1440) {
       bg = {
-        backgroundImage: 'url(' + imgLarge + ')',
+        backgroundImage: `url(${imgLarge})`,
       };
     } else if (window.innerWidth > 600) {
       bg = {
-        backgroundImage: 'url(' + imgMiddle + ')',
+        backgroundImage: `url(${imgMiddle})`,
       };
     } else {
       bg = {
-        backgroundImage: 'url(' + imgSmall + ')',
+        backgroundImage: `url(${imgSmall})`,
       };
     }
 
@@ -35,7 +35,7 @@ class Item extends React.Component {
           <div className={styles.text}>
             <h1 className={styles.headline}>{title}</h1>
             <p>{description}</p>
-            <Link to={'/cases/' + (number - 1)} className={styles.btn}>view case</Link>
+            <Link to={`/cases/${number - 1}`} className={styles.btn}>view case</Link>
           </div>
           <div className={styles.img} style={bg} />
         </div>

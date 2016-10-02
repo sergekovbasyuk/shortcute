@@ -32,7 +32,7 @@ const Header = React.createClass({
 
   render() {
     return (
-      <header className={styles.header + (this.state.isHidden ? ' is-hidden' : '')} ref="myHeader">
+      <header className={styles.header + (this.state.isHidden ? ' is-hidden' : '')}>
         <Title location={this.props.location} />
         <Nav />
       </header>
