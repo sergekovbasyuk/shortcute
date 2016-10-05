@@ -13,7 +13,7 @@ const Contacts = () => (
         <div className={styles.text}>
           <LogoSmall width="110" height="95" class={styles.logoSmall} />
           <h1 className={styles.headline}>Contacts</h1>
-          <p>When people over profits</p>
+          <p>Get to know us even more</p>
           <a href="https://www.behance.net/shortcute" className={styles.link}>
             <BehanceIcon />/shortcute
           </a>
@@ -28,7 +28,7 @@ const Contacts = () => (
         </div>
         <div className={styles.text}>
           <h1 className={styles.headline}>Drop a line</h1>
-          <p>When people over profits.</p>
+          <p>If you haven’t done it yet, hurry up!</p>
           <a href="mailto:hello@shortcute.xyz" className={styles.link}>
             <MailIcon />hello@shortcute.xyz
           </a>

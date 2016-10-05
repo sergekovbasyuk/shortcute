@@ -9,7 +9,7 @@ const CasesList = [
     description: 'Responsive website with dashboard for London based employment service startup.',
     background: 'Researching, UI and UX designing for fast growing London based employment service startup named Pinstant which helps match the right talent with the right opportunity.',
     task: 'To provide responsive website design with internal pages including dashboard in extremely short terms and follow freshy-modern-corporate style. The website should give clients an opportunity to search and add vacancies.',
-    deliverables: 'Check this awesome 545 PSD’s , Buddy',
+    deliverables: 'Well, just check this awesome designs, pal',
   },
   {
     imgSmall: 'http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544736/2_Smoliar_sxwd6k.jpg',
