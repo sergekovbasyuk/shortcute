@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(#000, .02);
+  border-bottom: 1px solid rgba(#000, 0.02);
   color: #000;
   padding: 10px 20px;
   font-family: 'Open Sans', sans-serif;
@@ -14,9 +14,9 @@
   max-width: 1920px;
   margin: 0 auto;
   overflow: hidden;
-  transition: transform .5s;
+  transition: transform 0.5s;
 
-  &:before {
+  &::before {
     z-index: -1;
     content: '';
     position: absolute;
@@ -25,7 +25,7 @@
     right: 0%;
     bottom: 0%;
     background: #fff;
-    opacity: .7;
+    opacity: 0.7;
   }
 
   @media (min-width: 700px) {
@@ -49,14 +49,14 @@
   font-size: 1.125rem;
 
   a {
-    -webkit-backface-visibility:hidden;
-    position:relative;
+    -webkit-backface-visibility: hidden;
+    position: relative;
   }
 }
 
 .nav {
   text-align: right;
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   text-transform: lowercase;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -70,8 +70,8 @@
   will-change: opacity;
 
   a {
-    -webkit-backface-visibility:hidden;
-    position:relative;
+    -webkit-backface-visibility: hidden;
+    position: relative;
   }
 
   svg {
@@ -117,9 +117,4 @@
     width: 131px;
     height: 24px;
   }
-
-}
-
-.titleContainer {
-  /*flex: 1;*/
 }

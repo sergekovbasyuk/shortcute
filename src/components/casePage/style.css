@@ -31,13 +31,15 @@
       width: 75%;
     }
 
-    h3, p {
+    h3,
+    p {
       display: inline-block;
     }
   }
 }
 
-.featuredImage, .caseImage {
+.featuredImage,
+.caseImage {
   display: block;
   width: 100%;
   height: auto;

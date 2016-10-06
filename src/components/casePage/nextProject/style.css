@@ -14,7 +14,7 @@
   margin: 0 10%;
 }
 
-.contactText{
+.contactText {
   text-align: center;
   width: 100%;
 
@@ -30,5 +30,5 @@
 }
 
 .btn {
-  composes: btn from '../../../css/generic.css'
+  composes: btn from '../../../css/generic.css';
 }

@@ -1,4 +1,4 @@
-.img{
+.img {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -28,7 +28,7 @@
 }
 
 .headline {
-  composes: headline from '../../../css/generic.css'
+  composes: headline from '../../../css/generic.css';
 }
 
 .logo {

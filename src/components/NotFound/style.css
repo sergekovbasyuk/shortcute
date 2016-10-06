@@ -1,5 +1,6 @@
 .content {
   composes: content from '../../css/generic.css';
+  height: 100vh;
 }
 
 .headline {
@@ -8,7 +9,7 @@
   margin-bottom: 1.25rem;
 }
 
-.contactText{
+.contactText {
   text-align: center;
   width: 100%;
 

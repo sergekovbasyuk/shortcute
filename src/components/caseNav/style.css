@@ -22,7 +22,7 @@
       opacity: 1;
 
       span {
-        opacity: .7;
+        opacity: 0.7;
       }
     }
   }
@@ -34,9 +34,9 @@
     display: inline-block;
     position: absolute;
     right: -25px;
-    transition: opacity .3s;
+    transition: opacity 0.3s;
 
-    &:nth-child(2){
+    &:nth-child(2) {
       bottom: 4px;
     }
   }
