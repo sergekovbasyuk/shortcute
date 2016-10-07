@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import styles from './style.css';
-import CaseNavigation from '../../caseNav';
+// import CaseNavigation from '../../caseNav';
 
 class Item extends React.Component {
   render() {
@@ -32,14 +32,14 @@ class Item extends React.Component {
     return (
       <div className="section">
         <div className={styles.content}>
-          <div className={styles.text}>
+          <div className={`text ${styles.text}`}>
             <h1 className={styles.headline}>{title}</h1>
             <p>{description}</p>
             <Link to={`/cases/${number - 1}`} className={styles.btn}>view case</Link>
           </div>
           <div className={styles.img} style={bg} />
         </div>
-        <CaseNavigation number={number} total={total} />
+        {/* <CaseNavigation number={number} total={total} /> */}
       </div>
     );
   }

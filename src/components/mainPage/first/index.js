@@ -2,7 +2,7 @@ import React from 'react';
 import 'fullpage.js';
 import jquery from 'jquery';
 import styles from './style.css';
-import CaseNavigation from '../../caseNav';
+// import CaseNavigation from '../../caseNav';
 import LogoSmall from '../../icons/LogoSmall';
 import ArrowIcon from '../../icons/ArrowIcon';
 
@@ -25,7 +25,7 @@ class First extends React.Component {
             <p>/shortcute is a digital design bureau that takes your project
             to the next level. Psst...we know the short cut.</p>
           </div>
-          <CaseNavigation total={total} />
+          {/* <CaseNavigation total={total} /> */}
         </div>
         <a href="" onClick={this.clickDown} className={styles.link}><ArrowIcon /></a>
       </div>
