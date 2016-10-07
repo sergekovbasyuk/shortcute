@@ -26,16 +26,16 @@ class CaseNavigation extends React.Component {
     let clickDown = this.clickDown;
     const clickUp = this.clickUp;
 
-    if (this.props.number) {
-      currentNumber = `0${this.props.number}`;
-
-      if (this.props.number === this.props.total) {
-        totalCases = 'UP';
-        clickDown = this.lastItemClickHandler;
-      }
-    } else {
-      currentNumber = '00';
-    }
+    // if (this.props.number) {
+    //   currentNumber = `0${this.props.number}`;
+    //
+    //   if (this.props.number === this.props.total) {
+    //     totalCases = 'UP';
+    //     clickDown = this.lastItemClickHandler;
+    //   }
+    // } else {
+    //   currentNumber = '00';
+    // }
 
     return (
       <div className={styles.navigation}>
@@ -46,7 +46,7 @@ class CaseNavigation extends React.Component {
               width="10" height="10" rx="1" fill="#292929" fillRule="evenodd"
             />
           </svg>
-          <span>{currentNumber}</span>
+          <span id="slide-number"></span>
         </a>
         <svg className={styles.line} width="2" height="25" viewBox="0 0 2 25">
           <path d="M0 0h2v25H0z" fill="#292929" fillRule="evenodd" />

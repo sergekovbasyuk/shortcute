@@ -3,18 +3,11 @@
   justify-content: space-between;
   border-bottom: 1px solid rgba(#000, 0.02);
   color: #000;
-  padding: 10px 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 12;
+  padding: 10px 20px;
   max-width: 1920px;
   margin: 0 auto;
-  overflow: hidden;
-  transition: transform 0.5s;
 
   &::before {
     z-index: -1;
@@ -38,10 +31,10 @@
   }
 }
 
-.headerMove {
+/*.headerMove {
   composes: header;
   color: coral;
-}
+}*/
 
 .title {
   margin: 0;
