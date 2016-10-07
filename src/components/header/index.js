@@ -27,7 +27,7 @@ class Header extends React.Component {
     }
 
     return (
-      <div>
+      <div className={styles.wrapper}>
         {headerComponent}
       </div>
     );
