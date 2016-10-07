@@ -31,6 +31,14 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+/*.headerMove {
+  composes: header;
+  color: coral;
+}*/
+
+>>>>>>> origin/master
 .title {
   margin: 0;
   text-align: center;
