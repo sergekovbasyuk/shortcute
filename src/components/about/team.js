@@ -11,22 +11,22 @@ const Team = () => (
       </div>
       <div className={styles.employees}>
         <div className={styles.employee}>
-          <img src="http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/Victor_xtbyd7.jpg" alt="" />
+          <img src="https://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/shortcute/team/Victor_xtbyd7.jpg" alt="Victor Samokhvalov" />
           <strong>Victor Samokhvalov</strong>
           <p>Co-founder<br /> Product designer</p>
         </div>
         <div className={styles.employee}>
-          <img src="http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/Alexander_zo0ikb.jpg" alt="" />
+          <img src="https://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/shortcute/team/Alexander_zo0ikb.jpg" alt="Alexander Zhovtalyuk" />
           <strong>Alexander Zhovtalyuk</strong>
           <p>Co-founder<br /> Product designer</p>
         </div>
         <div className={styles.employee}>
-          <img src="http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/Anna_bdap9b.jpg" alt="" />
+          <img src="https://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/shortcute/team/Anna_bdap9b.jpg" alt="Anna Hnap" />
           <strong>Anna Hnap</strong>
           <p>Product designer</p>
         </div>
         <div className={styles.employee}>
-          <img src="http://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/Sergii_ka7ctd.jpg" alt="" />
+          <img src="https://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/shortcute/team/Sergii_ka7ctd.jpg" alt="Serge Kovbasyuk" />
           <strong>Serge Kovbasyuk</strong>
           <p>Frontend developer</p>
         </div>

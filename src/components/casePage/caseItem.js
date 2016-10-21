@@ -44,11 +44,10 @@ class CaseItem extends React.Component {
           <p>{task}</p>
           <h3>Deliverables</h3>
           <p>{deliverables}</p>
-          <hr />
         </Element>
         <div>
-          <img sizes="100%" className={styles.featuredImage} src={imgFeatured} alt="" />
-          <img sizes="100%" className={styles.caseImage} src={imgCase} alt="" />
+          <img className={styles.featuredImage} src={imgFeatured} alt="" />
+          <img className={styles.caseImage} src={imgCase} alt="" />
         </div>
         <NextProject
           nextProjectTitle={nextProjectTitle}

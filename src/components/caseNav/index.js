@@ -20,10 +20,10 @@ class CaseNavigation extends React.Component {
   }
 
   render() {
-    let totalCases = `0${this.props.total}`;
-    let currentNumber;
+    const totalCases = `0${this.props.total}`;
+    // let currentNumber;
 
-    let clickDown = this.clickDown;
+    const clickDown = this.clickDown;
     const clickUp = this.clickUp;
 
     // if (this.props.number) {
@@ -67,8 +67,7 @@ class CaseNavigation extends React.Component {
 }
 
 CaseNavigation.propTypes = {
-  total: React.PropTypes.number.isRequired,
-  number: React.PropTypes.number,
+  total: React.PropTypes.string.isRequired,
 };
 
 export default CaseNavigation;
