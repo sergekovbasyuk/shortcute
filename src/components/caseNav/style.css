@@ -1,8 +1,9 @@
 .navigation {
   display: none;
   width: 15px;
-  position: fixed;
-  bottom: 40px;
+  /*position: fixed;*/
+  position: absolute;
+  bottom: calc(-100vh + 95px);
   left: 10%;
   cursor: pointer;
   z-index: 12;
