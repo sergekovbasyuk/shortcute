@@ -11,7 +11,8 @@ class CaseItem extends React.Component {
   render() {
     const id = this.props.id;
     const { title, description, background, task, deliverables, imgSmall,
-      imgMiddle, imgLarge, imgFeatured, imgCase } = this.props.data[id];
+      imgMiddle, imgLarge, mockup4, mockup3, mockup2, mockup1,
+      shots4, shots3, shots2, shots1 } = this.props.data[id];
     const total = this.props.data.length - 1;
 
     let nextId;
@@ -26,6 +27,10 @@ class CaseItem extends React.Component {
       nextId = parseInt(id, 10) + 1;
       nextProjectTitle = this.props.data[nextId].title;
       nextProjectDescription = this.props.data[nextId].description;
+    }
+
+    if (!this.props) {
+      return null;
     }
 
     return (
@@ -46,8 +51,20 @@ class CaseItem extends React.Component {
           <p>{deliverables}</p>
         </Element>
         <div>
-          <img className={styles.featuredImage} src={imgFeatured} alt="" />
-          <img className={styles.caseImage} src={imgCase} alt="" />
+          <picture>
+            <source media="(max-width: 425px)" srcSet={mockup1} />
+            <source media="(max-width: 768px)" srcSet={mockup2} />
+            <source media="(max-width: 1024px)" srcSet={mockup3} />
+            <source media="(max-width: 1440px)" srcSet={mockup4} />
+            <img src={mockup4} alt="Project mockup" className={styles.featuredImage} />
+          </picture>
+          <picture>
+            <source media="(max-width: 425px)" srcSet={shots1} />
+            <source media="(max-width: 768px)" srcSet={shots2} />
+            <source media="(max-width: 1024px)" srcSet={shots3} />
+            <source media="(max-width: 1440px)" srcSet={shots4} />
+            <img src={shots4} alt="Project shots" className={styles.caseImage} />
+          </picture>
         </div>
         <NextProject
           nextProjectTitle={nextProjectTitle}
