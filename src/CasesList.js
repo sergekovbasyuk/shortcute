@@ -1,6 +1,6 @@
 const CasesList = [
   {
-    imgSmall: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1472544737/shortcute/1_Pinstans_nzbjzw.jpg',
+    imgSmall: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_700/v1471283691/shortcute/pinstants_lg.jpg',
     imgMiddle: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/pinstants_md.jpg',
     imgLarge: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/pinstants_lg.jpg',
     mockup1: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_425/v1477056484/shortcute/shots/Mockups_progressive_krtvws.jpg',
@@ -18,7 +18,7 @@ const CasesList = [
     deliverables: 'Well, just check this awesome designs, pal',
   },
   {
-    imgSmall: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1472544736/shortcute/2_Smoliar_sxwd6k.jpg',
+    imgSmall: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_700/v1472640066/shortcute/smoliar_lg_chipbb.jpg',
     imgMiddle: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1472640066/shortcute/smoliar_md_te5prf.jpg',
     imgLarge: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1472640066/shortcute/smoliar_lg_chipbb.jpg',
     mockup1: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_425/v1477056484/shortcute/shots/Mockups_progressive_s9kiv7.jpg',
@@ -36,7 +36,7 @@ const CasesList = [
     deliverables: 'The website is visual-content-centered with its full width bg stylish photos, videos of backstage and generally made in dark colors flavored with faded-gold h1 font. The main page is designed like a slide show, information appears on cards, which replace one another with some animation when user scrolling.',
   },
   {
-    imgSmall: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1472544738/shortcute/3_Minute_Of_Life_a0sina.jpg',
+    imgSmall: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_700/v1471283691/shortcute/minuteoflife_lg.jpg',
     imgMiddle: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/minuteoflife_md.jpg',
     imgLarge: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/minuteoflife_lg.jpg',
     mockup1: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_425/v1477056486/shortcute/shots/Mockups_progressive_udvjrk.jpg',
@@ -54,7 +54,7 @@ const CasesList = [
     deliverables: 'Obvious navigation and info hierarchy, big comfortable and easy-to-notice buttons, extremely familiar social features section includes feed, messaging etc, pretty blue backgrounds — all this make UI friendly af.',
   },
   {
-    imgSmall: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1472544736/shortcute/4_Dubai_lzaozt.jpg',
+    imgSmall: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_700/v1471283692/shortcute/silver_lg.jpg',
     imgMiddle: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1471283690/shortcute/silver_md.jpg',
     imgLarge: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1471283692/shortcute/silver_lg.jpg',
     mockup1: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_425/v1477056486/shortcute/shots/Mockups_progressive_jrxvld.jpg',
@@ -72,7 +72,7 @@ const CasesList = [
     deliverables: 'Simple navigation, rich filtering abilities and useful venue info makes this app necessary for Dubai visitors as well as for locals. Designed in Sketch app.',
   },
   {
-    imgSmall: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1472544736/shortcute/5_Kuan_tueq4d.jpg',
+    imgSmall: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_700/v1472640064/shortcute/kuan_lg_ggkmrb.jpg',
     imgMiddle: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1472640065/shortcute/kuan_md_xdijkl.jpg',
     imgLarge: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1472640064/shortcute/kuan_lg_ggkmrb.jpg',
     mockup1: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_425/v1477056488/shortcute/shots/Mockups_progressive_qxfcpr.jpg',
@@ -90,7 +90,7 @@ const CasesList = [
     deliverables: 'Modern business&tech style designs with an extensive set of internal pages and a dashboard. Since the website supposed to provide lots of data tables and long-reads, it’s equipped with nice and comfortable to use font set that allows user easy to navigate and detect the desired information among its abundance.',
   },
   {
-    imgSmall: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1472544736/shortcute/6_Sammy_Icon_s8shpa.jpg',
+    imgSmall: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_700/v1471283691/shortcute/sammyicon_lg.jpg',
     imgMiddle: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/sammyicon_md.jpg',
     imgLarge: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1471283691/shortcute/sammyicon_lg.jpg',
     mockup1: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_425/v1477056490/shortcute/shots/Mockups_progressive_l77gru.jpg',
