@@ -1,11 +1,7 @@
 .img {
-  /*background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;*/
   display: block;
   width: 93%;
   margin: 0 auto;
-  /*height: 230px;*/
   height: auto;
   max-height: 65vw;
   object-fit: contain;
@@ -15,12 +11,13 @@
     max-height: 100vh;
     margin-right: 0;
     margin-left: auto;
-    /*flex-direction: row;*/
-    /*height: 90vh;*/
-    /*background-position: 100% center;*/
   }
 
   @media (min-width: 1024px) {
+    width: 85%;
+  }
+
+  @media (min-width: 1440px) {
     width: 100%;
   }
 }
