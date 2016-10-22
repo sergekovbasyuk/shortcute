@@ -1,5 +1,5 @@
 import React from 'react';
-// import Headroom from 'react-headroom';
+import Headroom from 'react-headroom';
 import Title from './Title';
 import Nav from './Nav';
 import styles from './style.css';
@@ -19,11 +19,17 @@ class Header extends React.Component {
       );
     } else {
       headerComponent = (
-        <header className={styles.header}>
-          <Title location={this.props.location} />
-          <Nav />
-        </header>
+        <Headroom disableInlineStyles>
+          <header className={styles.header}>
+            <Title location={this.props.location} />
+            <Nav />
+          </header>
+        </Headroom>
       );
+    }
+
+    if (!this.props) {
+      return null;
     }
 
     return (

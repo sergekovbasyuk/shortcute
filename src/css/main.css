@@ -64,15 +64,12 @@ p {
   top: 0;
   left: 0;
   right: 0;
+  transition: transform 300ms ease-in-out;
 }
 
 :global .headroom--unfixed {
   position: relative;
   transform: translateY(0);
-}
-
-:global .headroom--scrolled {
-  transition: transform 100ms ease-in-out;
 }
 
 :global .headroom--unpinned {

@@ -42,7 +42,6 @@ class Item extends React.Component {
             <p>{description}</p>
             <Link to={`/cases/${number - 1}`} className={styles.btn}>view case</Link>
           </div>
-          {/* <div className={styles.img} style={bg} /> */}
           <picture className={styles.imgContainer}>
             <source media="(max-width: 700px)" srcSet={imgSmall} />
             <source media="(max-width: 1920px)" srcSet={imgMiddle} />
