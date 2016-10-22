@@ -10,7 +10,7 @@ const CasesList = [
     shots1: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_340/v1477056484/shortcute/shots/Shots_progressive_pvdaqk.jpg',
     shots2: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_620/v1477056484/shortcute/shots/Shots_progressive_pvdaqk.jpg',
     shots3: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_820/v1477056484/shortcute/shots/Shots_progressive_pvdaqk.jpg',
-    shots4: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1477056484/shortcute/shots/Mockups_progressive_krtvws.jpg',
+    shots4: 'https://res.cloudinary.com/dsie3eeqb/image/upload/v1477056484/shortcute/shots/Shots_progressive_pvdaqk.jpg',
     title: 'Pinstants',
     description: 'Responsive website with dashboard for London based employment service startup.',
     background: 'Researching, UI and UX designing for fast growing London based employment service startup named Pinstant which helps match the right talent with the right opportunity.',
