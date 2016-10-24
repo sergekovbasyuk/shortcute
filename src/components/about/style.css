@@ -190,17 +190,18 @@
 
   strong {
     letter-spacing: 0;
-    line-height: 3.3;
+    /*line-height: 3.3;*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    margin: 0.8em;
   }
 
   p {
-    font-size: 8px;
+    font-size: 0.7em;
     line-height: 1.6;
 
     @media (min-width: 700px) {
-      font-size: 12px;
+      font-size: 0.7em;
     }
   }
 }
