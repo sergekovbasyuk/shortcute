@@ -5,41 +5,27 @@ import ArrowIcon from '../../icons/ArrowIcon';
 
 const Link = Scroll.Link;
 
-const First = ({ title, description, imgSmall, imgMiddle, imgLarge }) => {
-  let bg;
-
-  if (window.innerWidth > 1440) {
-    bg = {
-      backgroundImage: `url(${imgLarge})`,
-    };
-  } else if (window.innerWidth > 600) {
-    bg = {
-      backgroundImage: `url(${imgMiddle})`,
-    };
-  } else {
-    bg = {
-      backgroundImage: `url(${imgSmall})`,
-    };
-  }
-
-  return (
-    <div className={`section ${styles.firstslide}`}>
-      <div className={styles.content}>
-        <div className={styles.text}>
-          <h1 className={styles.headline}>{title}</h1>
-          <p>{description}</p>
-        </div>
-        <div className={styles.img} style={bg} />
+const First = ({ title, description, imgSmall, imgMiddle, imgLarge }) => (
+  <div className={`section ${styles.firstslide}`}>
+    <div className={styles.content}>
+      <div className={styles.text}>
+        <h1 className={styles.headline}>{title}</h1>
+        <p>{description}</p>
       </div>
-      <Link
-        to="content" spy smooth offset={-20}
-        duration={500} className={styles.link}
-      ><ArrowIcon />
-      </Link>
+      <picture className={styles.imgContainer}>
+        <source media="(max-width: 700px)" srcSet={imgSmall} />
+        <source media="(max-width: 1920px)" srcSet={imgMiddle} />
+        <source media="(min-width: 1920px)" srcSet={imgLarge} />
+        <img src={imgLarge} className={styles.img} alt="Case" />
+      </picture>
     </div>
-  );
-};
-
+    <Link
+      to="content" spy smooth offset={-20}
+      duration={500} className={styles.link}
+    ><ArrowIcon />
+    </Link>
+  </div>
+);
 
 First.propTypes = {
   title: React.PropTypes.string,

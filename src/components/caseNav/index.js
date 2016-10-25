@@ -21,21 +21,9 @@ class CaseNavigation extends React.Component {
 
   render() {
     const totalCases = `0${this.props.total}`;
-    // let currentNumber;
 
     const clickDown = this.clickDown;
     const clickUp = this.clickUp;
-
-    // if (this.props.number) {
-    //   currentNumber = `0${this.props.number}`;
-    //
-    //   if (this.props.number === this.props.total) {
-    //     totalCases = 'UP';
-    //     clickDown = this.lastItemClickHandler;
-    //   }
-    // } else {
-    //   currentNumber = '00';
-    // }
 
     return (
       <div className={styles.navigation}>

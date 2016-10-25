@@ -10,9 +10,24 @@ const Element = Scroll.Element;
 class CaseItem extends React.Component {
   render() {
     const id = this.props.id;
-    const { title, description, background, task, deliverables, imgSmall,
-      imgMiddle, imgLarge, mockup4, mockup3, mockup2, mockup1,
-      shots4, shots3, shots2, shots1 } = this.props.data[id];
+    const {
+      title,
+      description,
+      background,
+      task,
+      deliverables,
+      imgSmall,
+      imgMiddle,
+      imgLarge,
+      mockup4,
+      mockup3,
+      mockup2,
+      mockup1,
+      shots4,
+      shots3,
+      shots2,
+      shots1,
+    } = this.props.data[id];
     const total = this.props.data.length - 1;
 
     let nextId;

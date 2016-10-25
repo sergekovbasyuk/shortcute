@@ -1,34 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router';
 import styles from './style.css';
-// import CaseNavigation from '../../caseNav';
 
 class Item extends React.Component {
   render() {
-    const
-      { title,
+    const {
+      title,
       description,
       imgSmall,
       imgMiddle,
-      imgLarge } = this.props.data;
+      imgLarge,
+    } = this.props.data;
 
     const number = this.props.number;
-
-    // let bg;
-    //
-    // if (window.innerWidth > 1440) {
-    //   bg = {
-    //     backgroundImage: `url(${imgLarge})`,
-    //   };
-    // } else if (window.innerWidth > 600) {
-    //   bg = {
-    //     backgroundImage: `url(${imgMiddle})`,
-    //   };
-    // } else {
-    //   bg = {
-    //     backgroundImage: `url(${imgSmall})`,
-    //   };
-    // }
 
     if (!this.props) {
       return null;

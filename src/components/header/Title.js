@@ -8,6 +8,10 @@ class Title extends React.Component {
   render() {
     let logoBack;
 
+    if (!this.props.location) {
+      return null;
+    }
+
     if (this.props.location.pathname.indexOf('/cases/') === 0 && window.innerWidth <= 700) {
       logoBack = (
         <h1 className={styles.titleBack}>
