@@ -7,16 +7,16 @@ const parts = require('./libs/parts');
 const PATHS = {
   app: path.join(__dirname, 'src'),
   build: path.join(__dirname, 'build'),
-  images: path.join(__dirname, 'src/img')
+  images: path.join(__dirname, 'src/img'),
 };
 
 const common = {
   entry: {
-    app: PATHS.app
+    app: PATHS.app,
   },
   output: {
     path: PATHS.build,
-    filename: '[name].js'
+    filename: '[name].js',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -28,13 +28,13 @@ const common = {
       favicon: 'favicon.ico',
       googleAnalytics: {
         trackingId: 'UA-83871767-1',
-        pageViewOnLoad: true
+        pageViewOnLoad: true,
       },
-    })
+    }),
   ],
   resolve: {
-    extensions: ['', '.js', '.jsx']
-  }
+    extensions: ['', '.js', '.jsx'],
+  },
 };
 
 var config;
@@ -52,18 +52,18 @@ switch(process.env.npm_lifecycle_event) {
           filename: '[name].[chunkhash].js',
           // This is used for require.ensure. The setup
           // will work without but this is useful to set.
-          chunkFilename: '[chunkhash].js'
-        }
+          chunkFilename: '[chunkhash].js',
+        },
       },
       parts.clean(PATHS.build),
       parts.setFreeVariable(
         'process.env.NODE_ENV',
         'production'
       ),
-      parts.extractBundle({
-        name: 'vendor',
-        entries: ['react', 'react-dom', 'react-scroll', 'jquery', 'fullpage.js']
-      }),
+      // parts.extractBundle({
+      //   name: 'vendor',
+      //   entries: ['react', 'react-dom', 'react-scroll', 'jquery', 'fullpage.js']
+      // }),
       parts.minify(),
       parts.setupCSS(PATHS.app),
       parts.extractImage(PATHS.images),
@@ -75,7 +75,7 @@ switch(process.env.npm_lifecycle_event) {
     config = merge(
       common,
       {
-        devtool: 'eval-source-map'
+        devtool: 'eval-source-map',
       },
       parts.setupCSS(PATHS.app),
       parts.extractImage(PATHS.images),
@@ -83,7 +83,7 @@ switch(process.env.npm_lifecycle_event) {
       parts.devServer({
         // Customize host/port here if needed
         host: process.env.HOST,
-        port: process.env.PORT
+        port: process.env.PORT,
       })
     );
 }
