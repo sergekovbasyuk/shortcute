@@ -43,9 +43,13 @@
   display: block;
   width: 100%;
   height: auto;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .caseImage {
   margin-top: 6.25rem;
   padding: 0 10%;
+  max-width: 1000px;
+  box-sizing: content-box;
 }
