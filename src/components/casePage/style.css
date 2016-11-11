@@ -38,6 +38,10 @@
   }
 }
 
+.link {
+  color: #0076ff;
+}
+
 .featuredImage,
 .caseImage {
   display: block;

@@ -16,6 +16,7 @@ class CaseItem extends React.Component {
       background,
       task,
       deliverables,
+      link,
       imgSmall,
       imgMiddle,
       imgLarge,
@@ -64,6 +65,7 @@ class CaseItem extends React.Component {
           <p>{task}</p>
           <h3>Deliverables</h3>
           <p>{deliverables}</p>
+          <a className={styles.link} href={`http://${link}`}>{link}</a>
         </Element>
         <div>
           <picture>

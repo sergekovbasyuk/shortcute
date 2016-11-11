@@ -34,7 +34,7 @@ const CasesList = [
     background: 'The client is a known movie director assistant which has a great credits list that includes famous movies (mostly over CIS countries) and partnerships with respected directors.',
     task: 'Make a stylish responsive website design with kind of cinema industry and raw working process spirit. The site aims to represent our client as a high-class professional (who he really is), conveniently provide info about projects, gear, plans, schedule — all about his entire working life.',
     deliverables: 'The website is visual-content-centered with its full width bg stylish photos, videos of backstage and generally made in dark colors flavored with faded-gold h1 font. The main page is designed like a slide show, information appears on cards, which replace one another with some animation when user scrolling.',
-    www: 'smoliar.me',
+    link: 'smoliar.me',
   },
   {
     imgSmall: 'https://res.cloudinary.com/dsie3eeqb/image/upload/c_scale,w_700/v1471283691/shortcute/minuteoflife_lg.jpg',
@@ -107,7 +107,7 @@ const CasesList = [
     background: 'Sammy Icon is a known underwear manufacturer spread over the world: USA, Italy, Germany, Sweden, Canada, Russia, Ukraine and so on. The very first was designed by our team back in the days, so this time the client was needed a redesign. The audience: progressive youth and middle-aged males and females.',
     task: 'To make a responsive e-commerce website from scratch. Team was given only an information architecture flowchart.',
     deliverables: 'Clean online shop designs with vivid content that is easy-to-use and suitable to brand’s audience. UI elements were made simple and not so bright or colorful, just with white and navy colors to not to distract user’s attention from shop’s content.',
-    www: 'sammy-icon.com',
+    link: 'sammy-icon.com',
   },
 ];
 
