@@ -55,6 +55,8 @@
 .caseImage {
   margin-top: 6.25rem;
   padding: 0 10%;
+  /*margin-left: 10%;*/
+  /*margin-right: 10%;*/
   max-width: 1000px;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
