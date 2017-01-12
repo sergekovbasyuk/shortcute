@@ -7,7 +7,6 @@ import Team from './team';
 import Contact from './contact';
 import Footer from '../footer';
 
-
 const About = () => (
   <div className="container">
     <First />

@@ -5,6 +5,7 @@ import Case from '../casePage';
 import Layout from '../layout';
 import About from '../about';
 import Contacts from '../contacts';
+import Hiring from '../hiringPage';
 import Main from '../main';
 import NotFound from '../NotFound';
 
@@ -17,6 +18,7 @@ const AppRouter = () => (
       <Route path="cases/:id" component={Case} />
       <Route path="aboutus" component={About} />
       <Route path="contacts" component={Contacts} />
+      <Route path="hiring" component={Hiring} />
       <Route path="*" component={NotFound} />
     </Route>
   </Router>

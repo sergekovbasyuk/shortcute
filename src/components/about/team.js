@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import styles from './style.css';
 
 const Team = () => (
@@ -31,6 +32,8 @@ const Team = () => (
           <p>Frontend developer</p>
         </div>
       </div>
+      <p>Want to join us? <Link to="/hiring" className={styles.hiringLink} >
+      Check available positions here.</Link></p>
     </div>
   </div>
 );

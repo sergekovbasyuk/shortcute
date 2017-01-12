@@ -204,3 +204,8 @@
     }
   }
 }
+
+.hiringLink {
+  composes: hiringLink from '../../css/generic.css';
+  margin-top: 55px;
+}

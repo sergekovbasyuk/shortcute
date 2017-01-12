@@ -1,0 +1,93 @@
+.img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+
+  @media (min-width: 700px) {
+    max-height: 100vh;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: 1024px) {
+    width: 85%;
+  }
+}
+
+.imgContainer {
+  margin-top: 92px;
+  margin-left: auto;
+  margin-right: 0;
+  width: 70%;
+  margin-bottom: -50px;
+  position: relative;
+  z-index: -1;
+
+  @media (min-width: 700px) {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.text {
+  composes: text from '../../css/generic.css';
+  max-width: none;
+
+  @media (min-width: 700px) {
+    width: 40%;
+  }
+}
+
+.headline {
+  composes: headline from '../../css/generic.css';
+}
+
+.logo {
+  composes: logo from '../../css/generic.css';
+}
+
+.firstslide {
+  min-height: 100vh;
+}
+
+.link {
+  display: block;
+  width: 15px;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  cursor: pointer;
+
+  @media (min-width: 700px) {
+    left: 10%;
+  }
+
+  @media (min-width: 1440px) {
+    left: 250px;
+  }
+}
+
+.blue {
+  color: #0076ff;
+}
+
+.taskParagraph {
+  margin-bottom: 20px;
+}
+
+.first {
+  height: 100vh;
+  position: relative;
+}

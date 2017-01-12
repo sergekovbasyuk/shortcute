@@ -81,3 +81,9 @@
     font-size: 2.625rem;
   }
 }
+
+.hiringLink {
+  color: #0076ff;
+  margin-top: 8px;
+  display: inline-block;
+}
