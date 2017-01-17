@@ -21,7 +21,7 @@ class Header extends React.Component {
       headerComponent = (
         <Headroom disableInlineStyles>
           <header className={styles.header}>
-            <Title location={this.props.location} />
+            <Title location={this.props.location} navigateBack={this.props.navigateBack} />
             <Nav />
           </header>
         </Headroom>
@@ -42,6 +42,7 @@ class Header extends React.Component {
 
 Header.propTypes = {
   location: React.PropTypes.object.isRequired,
+  navigateBack: React.PropTypes.object.isRequired,
 };
 
 export default Header;

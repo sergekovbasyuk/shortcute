@@ -1,10 +1,11 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 import Header from '../header';
 import styles from './style.css';
 
-const Layout = ({ location, children }) => (
+const Layout = ({ location, children, history }) => (
   <div className={styles.layout}>
-    <Header location={location} />
+    <Header location={location} navigateBack={history} />
     {children}
   </div>
 );
@@ -14,4 +15,4 @@ Layout.propTypes = {
   children: React.PropTypes.object.isRequired,
 };
 
-export default Layout;
+export default withRouter(Layout);

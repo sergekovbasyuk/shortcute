@@ -31,6 +31,16 @@ class Title extends React.Component {
           </IndexLink>
         </h1>
       );
+    } else if (this.props.location.pathname.indexOf('/hiring') === 0) {
+      logoBack = (
+        <h1 className={styles.titleBack}>
+          <a href="#" className={styles.link} onClick={this.props.navigateBack.goBack} >
+            <LogoSmall width="20" height="18" />
+            <ArrowIconLeft />
+            <span>go back</span>
+          </a>
+        </h1>
+      );
     } else {
       logoBack = (
         <h1 className={styles.title}>
@@ -53,6 +63,7 @@ class Title extends React.Component {
 
 Title.propTypes = {
   location: React.PropTypes.object.isRequired,
+  navigateBack: React.PropTypes.object,
 };
 
 export default Title;
