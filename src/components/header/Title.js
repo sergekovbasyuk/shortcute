@@ -34,11 +34,11 @@ class Title extends React.Component {
     } else if (this.props.location.pathname.indexOf('/hiring') === 0) {
       logoBack = (
         <h1 className={styles.titleBack}>
-          <a href="#" className={styles.link} onClick={this.props.navigateBack.goBack} >
+          <span className={styles.link} onClick={(this.props.navigateBack.goBack)} >
             <LogoSmall width="20" height="18" />
             <ArrowIconLeft />
             <span>go back</span>
-          </a>
+          </span>
         </h1>
       );
     } else {

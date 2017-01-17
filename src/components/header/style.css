@@ -96,6 +96,7 @@
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .link + .link {
