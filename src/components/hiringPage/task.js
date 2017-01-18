@@ -15,7 +15,9 @@ const Task = () => (
       <p className={styles.taskParagraph}>2. Don’t forget to use company’s logo.
         <a
           className={styles.blue}
-          href="www.freepik.com/free-vector/yoga-and-massage-logo_833053.htm#term=yoga"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="http://www.freepik.com/free-vector/yoga-and-massage-logo_833053.htm#term=yoga"
         >
         www.freepik.com/free-vector/yoga-and-massage-logo_833053.htm#term=yoga</a>
       </p>
