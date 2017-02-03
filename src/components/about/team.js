@@ -31,6 +31,11 @@ const Team = () => (
           <strong>Serge Kovbasyuk</strong>
           <p>Frontend developer</p>
         </div>
+        <div className={styles.employee}>
+          <img src="http://res.cloudinary.com/dsie3eeqb/image/upload/v1486122335/shortcute/team/Trof.jpg" alt="Serge Trofymchuk" />
+          <strong>Serge Trofymchuk</strong>
+          <p>Junior UI/UX Designer</p>
+        </div>
       </div>
       <p>Want to join us? <Link to="/hiring" className={styles.hiringLink} >
       Check available positions here.</Link></p>

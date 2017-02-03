@@ -156,8 +156,8 @@
   margin: 0 -5px;
 
   @media (min-width: 700px) {
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    /*flex-wrap: nowrap;*/
+    /*justify-content: space-around;*/
     margin: 0 -10px;
   }
 }
@@ -173,8 +173,9 @@
 
   @media (min-width: 700px) {
     flex: 1 1 25%;
-    margin-bottom: 0;
+    /*margin-bottom: 0;*/
     padding: 0 10px;
+    max-width: 25%;
   }
 
   img {
