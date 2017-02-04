@@ -12,7 +12,9 @@ class Title extends React.Component {
       return null;
     }
 
-    if (this.props.location.pathname.indexOf('/cases/') === 0 && window.innerWidth <= 700) {
+    const { pathname } = this.props.location;
+
+    if ((pathname.indexOf('/cases/') === 0 && window.innerWidth <= 700) || (pathname.indexOf('/hiring') === 0 && window.innerWidth <= 700)) {
       logoBack = (
         <h1 className={styles.titleBack}>
           <IndexLink to="/" className={styles.link}>
@@ -21,7 +23,7 @@ class Title extends React.Component {
           </IndexLink>
         </h1>
       );
-    } else if (this.props.location.pathname.indexOf('/cases/') === 0 && window.innerWidth > 700) {
+    } else if (pathname.indexOf('/cases/') === 0 && window.innerWidth > 700) {
       logoBack = (
         <h1 className={styles.titleBack}>
           <IndexLink to="/" className={styles.link}>
@@ -31,7 +33,7 @@ class Title extends React.Component {
           </IndexLink>
         </h1>
       );
-    } else if (this.props.location.pathname.indexOf('/hiring') === 0 && window.innerWidth > 700) {
+    } else if (pathname.indexOf('/hiring') === 0 && window.innerWidth > 700) {
       logoBack = (
         <h1 className={styles.titleBack}>
           <span className={styles.link} onClick={(this.props.navigateBack.goBack)} >
@@ -39,15 +41,6 @@ class Title extends React.Component {
             <ArrowIconLeft />
             <span>go back</span>
           </span>
-        </h1>
-      );
-    } else if (this.props.location.pathname.indexOf('/hiring') === 0 && window.innerWidth <= 700) {
-      logoBack = (
-        <h1 className={styles.titleBack}>
-          <IndexLink to="/" className={styles.link}>
-            <ArrowIconLeft />
-            <LogoSmall width="20" height="18" />
-          </IndexLink>
         </h1>
       );
     } else {
