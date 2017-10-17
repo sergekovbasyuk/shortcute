@@ -22,7 +22,7 @@ const Contacts = () => (
             <DribbleIcon />@shortcute
           </a>
           <br />
-          <a href="https://www.facebook.com/CutxPasteStudio" className={styles.link}>
+          <a href="https://www.facebook.com/shortcute.xyz" className={styles.link}>
             <FacebookIcon />/shortcute
           </a>
         </div>
